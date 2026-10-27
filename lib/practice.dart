@@ -326,11 +326,212 @@ class _PracticeScreenState extends State<PracticeScreen> {
       ),
     ),
   );
+  Widget problemMap() => Surface(
+    key: const ValueKey('practice-problem-map'),
+    padding: const EdgeInsets.all(12),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const Eyebrow('이번 연습'),
+        const SizedBox(height: 12),
+        ValueListenableBuilder<int>(
+          valueListenable: elapsed,
+          builder: (_, value, _) => Text(
+            clockLabel(value),
+            style: numeric.copyWith(fontSize: 26, fontWeight: FontWeight.w800),
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          '${s.answered}/${s.total} 응답',
+          style: const TextStyle(color: muted, fontSize: 12),
+        ),
+        const SizedBox(height: 20),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          children: List.generate(s.problems.length, (i) {
+            final done = s.problems[i].expected(i).keys.every(s.hasAnswer);
+            return SizedBox(
+              width: 40,
+              height: 44,
+              child: OutlinedButton(
+                key: ValueKey('problem-jump-$i'),
+                onPressed: busy ? null : () => go(i),
+                style: OutlinedButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  backgroundColor: i == index
+                      ? ink
+                      : done
+                      ? lime
+                      : Colors.white,
+                  foregroundColor: i == index ? Colors.white : ink,
+                  side: BorderSide(color: i == index ? ink : line),
+                ),
+                child: Text('${i + 1}'),
+              ),
+            );
+          }),
+        ),
+        const SizedBox(height: 14),
+        const Text('초록색 · 응답 완료', style: TextStyle(fontSize: 11, color: muted)),
+      ],
+    ),
+  );
+
+  Widget comparisonBody(Problem p) => SafeArea(
+    top: false,
+    child: LayoutBuilder(
+      builder: (context, box) {
+        final wide = box.maxWidth >= 700 && box.maxHeight >= 500;
+        final compact = box.maxWidth < 380 || box.maxHeight < 740;
+        Widget exercise = p.type == ProblemType.order
+            ? OrderingExercise(
+                problem: p,
+                answer: s.answers['$index'] ?? '',
+                onChanged: selected,
+              )
+            : ComparisonExercise(
+                problem: p,
+                answer: s.answers['$index'],
+                onChanged: selected,
+              );
+        Widget workspace = Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                TextButton(
+                  onPressed: busy ? null : overview,
+                  child: Text('${index + 1} / ${s.problems.length}'),
+                ),
+                const Spacer(),
+                if (!wide)
+                  ValueListenableBuilder<int>(
+                    valueListenable: elapsed,
+                    builder: (_, value, _) => Text(
+                      clockLabel(value),
+                      style: numeric.copyWith(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            LinearProgressIndicator(
+              value: s.answered / s.total,
+              minHeight: 3,
+              color: ink,
+              backgroundColor: line,
+            ),
+            if (c.error != null)
+              Text(
+                c.error!,
+                style: const TextStyle(color: danger, fontSize: 12),
+              ),
+            Expanded(
+              child: LayoutBuilder(
+                builder: (context, area) => SingleChildScrollView(
+                  controller: scroll,
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minHeight: area.maxHeight),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: compact ? 10 : 20,
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            p.type == ProblemType.order
+                                ? '큰 것부터 차례로 탭하세요.'
+                                : '어느 쪽이 더 클까요?',
+                            style: TextStyle(
+                              fontSize: compact ? 21 : 23,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: -.7,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            p.type == ProblemType.order
+                                ? '선택한 카드를 다시 누르면 취소됩니다.'
+                                : '답을 선택하면 다음 문제로 넘어갑니다.',
+                            style: const TextStyle(fontSize: 12, color: muted),
+                          ),
+                          SizedBox(height: compact ? 16 : 24),
+                          IgnorePointer(ignoring: busy, child: exercise),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                OutlinedButton(
+                  onPressed: index == 0 || busy ? null : () => go(index - 1),
+                  child: const Icon(Icons.arrow_back_rounded),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: index == s.problems.length - 1
+                      ? FilledButton(
+                          onPressed: busy ? null : finish,
+                          child: const Text('완료하고 채점하기'),
+                        )
+                      : OutlinedButton(
+                          onPressed: busy ? null : () => go(index + 1),
+                          child: const Text('다음 문제'),
+                        ),
+                ),
+                if (!wide)
+                  IconButton(
+                    tooltip: '전체 문제 보기',
+                    onPressed: busy ? null : overview,
+                    icon: const Icon(Icons.apps_rounded),
+                  ),
+              ],
+            ),
+          ],
+        );
+        return Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1100),
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(
+                compact ? 12 : 20,
+                0,
+                compact ? 12 : 20,
+                12,
+              ),
+              child: wide
+                  ? Row(
+                      key: const ValueKey('practice-wide'),
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(child: workspace),
+                        const SizedBox(width: 24),
+                        SizedBox(width: 166, child: problemMap()),
+                      ],
+                    )
+                  : workspace,
+            ),
+          ),
+        );
+      },
+    ),
+  );
+
   @override
   Widget build(BuildContext context) {
     final p = s.problems[index];
     final isTable = p.type == ProblemType.table;
-    final editingTable = isTable && MediaQuery.viewInsetsOf(context).bottom > 0;
     return PopScope(
       canPop: allowPop,
       onPopInvokedWithResult: (didPop, result) {
@@ -364,286 +565,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
             const SizedBox(width: 8),
           ],
         ),
-        body: isTable
-            ? additionBody()
-            : SafeArea(
-                top: false,
-                child: Center(
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 720),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 4, 20, 12),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  GestureDetector(
-                                    onTap: busy ? null : overview,
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                        vertical: 8,
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Text(
-                                            '${index + 1}'.padLeft(2, '0'),
-                                            style: const TextStyle(
-                                              fontWeight: FontWeight.w800,
-                                              fontSize: 19,
-                                            ),
-                                          ),
-                                          Text(
-                                            ' / ${s.problems.length}',
-                                            style: const TextStyle(
-                                              color: muted,
-                                            ),
-                                          ),
-                                          const SizedBox(width: 6),
-                                          const Icon(
-                                            Icons.expand_more_rounded,
-                                            size: 20,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  ValueListenableBuilder<int>(
-                                    valueListenable: elapsed,
-                                    builder: (_, value, _) => Row(
-                                      children: [
-                                        const Icon(
-                                          Icons.timer_outlined,
-                                          size: 17,
-                                          color: muted,
-                                        ),
-                                        const SizedBox(width: 6),
-                                        Text(
-                                          clockLabel(value),
-                                          style: numeric.copyWith(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w700,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 4),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
-                                child: LinearProgressIndicator(
-                                  value: s.answered / s.total,
-                                  minHeight: 5,
-                                  color: ink,
-                                  backgroundColor: line,
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              Row(
-                                children: [
-                                  Text(
-                                    '${s.answered}/${s.total} 응답',
-                                    style: const TextStyle(
-                                      color: muted,
-                                      fontSize: 11,
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  const Text(
-                                    '자동 저장 중',
-                                    style: TextStyle(
-                                      color: muted,
-                                      fontSize: 11,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        if (c.error != null)
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
-                            child: Text(
-                              c.error!,
-                              style: const TextStyle(
-                                color: danger,
-                                fontSize: 12,
-                              ),
-                            ),
-                          ),
-                        Expanded(
-                          child: SingleChildScrollView(
-                            controller: scroll,
-                            padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
-                            child: IgnorePointer(
-                              ignoring: busy,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  if (!editingTable)
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 4,
-                                      ),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Eyebrow(switch (p.type) {
-                                            ProblemType.table =>
-                                              'FILL THE TABLE',
-                                            ProblemType.product =>
-                                              'COMPARE PRODUCTS',
-                                            ProblemType.fraction =>
-                                              'COMPARE FRACTIONS',
-                                            ProblemType.order =>
-                                              'ORDER FRACTIONS',
-                                          }),
-                                          const SizedBox(height: 10),
-                                          Text(
-                                            switch (p.type) {
-                                              ProblemType.table =>
-                                                '합계를 보고 빈칸을 채우세요.',
-                                              ProblemType.order =>
-                                                '큰 것부터 차례로 탭하세요.',
-                                              _ => '어느 쪽이 더 클까요?',
-                                            },
-                                            style: const TextStyle(
-                                              fontSize: 23,
-                                              fontWeight: FontWeight.w800,
-                                              letterSpacing: -.7,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 8),
-                                          Text(
-                                            switch (p.type) {
-                                              ProblemType.table =>
-                                                '가로·세로 합계를 함께 활용해 보세요.',
-                                              ProblemType.order =>
-                                                '선택한 카드를 다시 누르면 취소됩니다.',
-                                              _ => '답을 선택하면 다음 문제로 넘어갑니다.',
-                                            },
-                                            style: const TextStyle(
-                                              color: muted,
-                                              fontSize: 12,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  if (!editingTable) const SizedBox(height: 24),
-                                  if (isTable)
-                                    TableExercise(
-                                      key: tableKey,
-                                      problem: p,
-                                      index: index,
-                                      session: s,
-                                      onAnswer: c.answer,
-                                    )
-                                  else if (p.type == ProblemType.order)
-                                    OrderingExercise(
-                                      problem: p,
-                                      answer: s.answers['$index'] ?? '',
-                                      onChanged: selected,
-                                    )
-                                  else
-                                    ComparisonExercise(
-                                      problem: p,
-                                      answer: s.answers['$index'],
-                                      onChanged: selected,
-                                    ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
-                          child: editingTable
-                              ? Row(
-                                  children: [
-                                    OutlinedButton(
-                                      onPressed: busy
-                                          ? null
-                                          : () =>
-                                                tableKey.currentState?.negate(),
-                                      child: const Text(
-                                        '− / +',
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Expanded(
-                                      child: FilledButton(
-                                        onPressed: busy
-                                            ? null
-                                            : () => tableKey.currentState?.move(
-                                                1,
-                                              ),
-                                        child: const Text('다음 빈칸'),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    IconButton(
-                                      tooltip: '키보드 닫기',
-                                      onPressed: () => FocusManager
-                                          .instance
-                                          .primaryFocus
-                                          ?.unfocus(),
-                                      icon: const Icon(
-                                        Icons.keyboard_hide_rounded,
-                                      ),
-                                    ),
-                                  ],
-                                )
-                              : Row(
-                                  children: [
-                                    OutlinedButton(
-                                      onPressed: index == 0 || busy
-                                          ? null
-                                          : () => go(index - 1),
-                                      child: const Icon(
-                                        Icons.arrow_back_rounded,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Expanded(
-                                      child: index == s.problems.length - 1
-                                          ? FilledButton(
-                                              onPressed: busy ? null : finish,
-                                              child: const Text('완료하고 채점하기'),
-                                            )
-                                          : OutlinedButton(
-                                              onPressed: busy
-                                                  ? null
-                                                  : () => go(index + 1),
-                                              child: Text(
-                                                isTable ? '다음 표' : '다음 문제',
-                                              ),
-                                            ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    IconButton(
-                                      tooltip: '전체 문제 보기',
-                                      onPressed: busy ? null : overview,
-                                      icon: const Icon(Icons.apps_rounded),
-                                    ),
-                                  ],
-                                ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+        body: isTable ? additionBody() : comparisonBody(p),
       ),
     );
   }

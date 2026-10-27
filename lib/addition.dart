@@ -98,9 +98,13 @@ class _AdditionExerciseState extends State<AdditionExercise> {
       final sideBySide =
           width >= 640 || (width >= 560 && width > height * 1.25);
       if (sideBySide) {
-        final padWidth = (width * .38).clamp(240.0, 320.0);
+        final padWidth = (width * .32).clamp(220.0, 280.0);
         final navHeight = height < 360 ? 44.0 : 50.0;
-        final inputHeight = min(height, 300.0 + navHeight + 12);
+        final showPreview = height >= 480;
+        final inputHeight = min(
+          height,
+          300.0 + navHeight + 12 + (showPreview ? 76 : 0),
+        );
         final tableWidth = width - padWidth - gap;
         final tableHeight = min(
           height,
@@ -128,6 +132,33 @@ class _AdditionExerciseState extends State<AdditionExercise> {
               height: inputHeight,
               child: Column(
                 children: [
+                  if (showPreview) ...[
+                    Surface(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 8,
+                      ),
+                      color: selectedMemo == null ? Colors.white : memoSurface,
+                      child: Row(
+                        children: [
+                          Text(
+                            selectedMemo == null ? '선택한 답안' : '계산 메모',
+                            style: const TextStyle(fontSize: 11, color: muted),
+                          ),
+                          const Spacer(),
+                          Text(
+                            answer.isEmpty ? '—' : answer,
+                            key: const ValueKey('wide-input-preview'),
+                            style: numeric.copyWith(
+                              fontSize: 23,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
                   Expanded(child: keypad()),
                   const SizedBox(height: 12),
                   navigation(navHeight),

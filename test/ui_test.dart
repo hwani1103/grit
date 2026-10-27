@@ -94,6 +94,38 @@ void main() {
       },
     );
   }
+  testWidgets(
+    'Fold cover and inner workspace keep answers, time and direct navigation',
+    (tester) async {
+      size(tester, const Size(360, 840));
+      final c = AppController(MemoryPersistence())
+        ..active = sample(SetKind.multiplication);
+      await tester.pumpWidget(GritApp(controller: c));
+      await enterActive(tester, c);
+      final session = c.active!;
+      final start = session.startedAt;
+      tester.view.physicalSize = const Size(752, 834.67);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('practice-wide')), findsOneWidget);
+      expect(
+        find.byKey(const ValueKey('problem-jump-17')).hitTestable(),
+        findsOneWidget,
+      );
+      await tester.tap(find.byKey(const ValueKey('problem-jump-17')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('왼쪽이 큼'));
+      await tester.pump();
+      expect(session.answers['17'], '>');
+      tester.view.physicalSize = const Size(360, 840);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('practice-wide')), findsNothing);
+      expect(session.page, 17);
+      expect(session.startedAt, start);
+      expect(session.answers['17'], '>');
+      expect(tester.takeException(), isNull);
+      await close(tester, c);
+    },
+  );
   testWidgets('phone home, creation, tap comparison, completion and review', (
     tester,
   ) async {

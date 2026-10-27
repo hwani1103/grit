@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
         top: false,
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 680),
+            constraints: BoxConstraints(maxWidth: tab == 0 ? 1100 : 720),
             child: c.loadFailed
                 ? loadError()
                 : tab == 0
@@ -242,7 +242,8 @@ class _HomeScreenState extends State<HomeScreen> {
       final count = c.records.length;
       final correct = c.records.fold(0, (s, r) => s + r.correct);
       final seconds = c.records.fold(0, (s, r) => s + r.elapsedSeconds!);
-      final wide = box.maxWidth >= 600 && box.maxHeight < 520;
+      final wide =
+          box.maxWidth >= 700 || (box.maxWidth >= 600 && box.maxHeight < 520);
       final compact = box.maxHeight < 620;
       final spacing = compact ? 8.0 : 12.0;
       Widget header() => SizedBox(
@@ -357,9 +358,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         child: wide
             ? Row(
+                key: const ValueKey('training-wide'),
                 children: [
                   Expanded(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         header(),
                         SizedBox(height: spacing),
@@ -775,7 +778,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const Divider(),
               const SizedBox(height: 20),
               const Text(
-                'GRIT  1.0.0',
+                'GRIT  1.1.0',
                 style: TextStyle(fontWeight: FontWeight.w800),
               ),
               const SizedBox(height: 6),
