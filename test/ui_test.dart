@@ -94,6 +94,125 @@ void main() {
       },
     );
   }
+  for (final viewport in [
+    const Size(320, 640),
+    const Size(390, 844),
+    const Size(844, 390),
+    const Size(752, 834),
+  ]) {
+    testWidgets(
+      'vitamin history filters, numbers sets, scrolls above safe area at $viewport',
+      (tester) async {
+        size(tester, viewport);
+        tester.view.padding = const FakeViewPadding(bottom: 34);
+        addTearDown(tester.view.resetPadding);
+        final records = List.generate(36, (i) {
+          final start = DateTime(2026, 1, 1).add(Duration(days: i));
+          final r = PracticeSession(
+            id: 'history-m-$i',
+            kind: SetKind.multiplication,
+            seed: 73,
+            problems: Generator(73).generate(SetKind.multiplication),
+            startedAt: start,
+            completedAt: start.add(Duration(seconds: 90 + i * 60)),
+            elapsedSeconds: 90 + i * 60,
+          );
+          r.answers.addEntries(r.expected.entries.take(i == 0 ? 9 : 18));
+          return r;
+        });
+        final addition = sample(SetKind.addition)
+          ..completedAt = DateTime.now()
+          ..elapsedSeconds = 60;
+        addition.answers.addAll(addition.expected);
+        final c = AppController(MemoryPersistence())
+          ..records = [
+            records[20],
+            addition,
+            ...records.where((r) => r != records[20]),
+          ];
+        final before = c.encode();
+        final boundary = GlobalKey();
+        await tester.pumpWidget(
+          RepaintBoundary(
+            key: boundary,
+            child: GritApp(controller: c),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('맞힌 문제'), findsNothing);
+        await tester.tap(find.text('곱셈'));
+        await tester.pumpAndSettle();
+        expect(find.text('READY WHEN YOU ARE'), findsNothing);
+        expect(c.active, isNull);
+        if (const bool.fromEnvironment('GRIT_CAPTURE')) {
+          await expectLater(
+            find.byKey(boundary),
+            matchesGoldenFile(
+              '../test_output/vitamin-home-${viewport.width.toInt()}.png',
+            ),
+          );
+        }
+        await tester.tap(
+          find.byKey(const ValueKey('vitamin-history-multiplication')),
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('36회차'), findsOneWidget);
+        expect(find.text('36.50'), findsOneWidget);
+        expect(c.active, isNull);
+        final dialogRect = tester.getRect(
+          find.byKey(const ValueKey('vitamin-history-dialog')),
+        );
+        expect(dialogRect.bottom, lessThanOrEqualTo(viewport.height - 34));
+        if (const bool.fromEnvironment('GRIT_CAPTURE')) {
+          await expectLater(
+            find.byKey(boundary),
+            matchesGoldenFile(
+              '../test_output/vitamin-history-${viewport.width.toInt()}.png',
+            ),
+          );
+        }
+        await tester.scrollUntilVisible(
+          find.text('1회차'),
+          350,
+          scrollable: find.descendant(
+            of: find.byKey(
+              const ValueKey('vitamin-history-list-multiplication'),
+            ),
+            matching: find.byType(Scrollable),
+          ),
+        );
+        final first = find.byKey(const ValueKey('vitamin-record-history-m-0'));
+        expect(
+          find.descendant(of: first, matching: find.text('50.0%')),
+          findsOneWidget,
+        );
+        expect(
+          find.descendant(of: first, matching: find.text('1.50')),
+          findsOneWidget,
+        );
+        expect(find.text('1회차').hitTestable(), findsOneWidget);
+        await tester.tap(find.byTooltip('기록 닫기'));
+        await tester.pumpAndSettle();
+        await tester.tap(
+          find.byKey(const ValueKey('vitamin-history-addition')),
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('1회차'), findsOneWidget);
+        expect(find.text('100.0%'), findsOneWidget);
+        expect(find.text('1.00'), findsOneWidget);
+        await tester.tap(find.byTooltip('기록 닫기'));
+        await tester.pumpAndSettle();
+        await tester.tap(
+          find.byKey(const ValueKey('vitamin-history-division')),
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('아직 완료한 연습이 없어요.'), findsOneWidget);
+        expect(c.encode(), before);
+        expect(tester.takeException(), isNull);
+        await close(tester, c);
+      },
+    );
+  }
   testWidgets(
     'Fold cover and inner workspace keep answers, time and direct navigation',
     (tester) async {
@@ -143,7 +262,9 @@ void main() {
 
     await tester.ensureVisible(find.text('곱셈'));
 
-    await tester.tap(find.text('곱셈'));
+    await tester.tap(
+      find.byKey(const ValueKey('vitamin-start-multiplication')),
+    );
 
     await tester.pumpAndSettle();
 
@@ -201,6 +322,20 @@ void main() {
       expect(tester.takeException(), isNull);
       expect(find.byType(TextField), findsNothing);
       expect(find.byType(Scrollable), findsNothing);
+      expect(find.byKey(const ValueKey('pad-prev')), findsNothing);
+      expect(find.byKey(const ValueKey('pad-next')), findsNothing);
+      expect(find.text('− / +'), findsNothing);
+      expect(find.text('-'), findsOneWidget);
+      if (viewport.width == 390) {
+        expect(
+          tester.getSize(find.byKey(const ValueKey('pad-1'))).width,
+          greaterThan(100),
+        );
+        expect(
+          tester.getSize(find.byKey(const ValueKey('pad-1'))).height,
+          greaterThanOrEqualTo(48),
+        );
+      }
       final problem = c.active!.problems[4];
       expect(find.text('구분'), findsNothing);
       for (var r = 0; r < problem.values.length; r++) {
@@ -244,7 +379,8 @@ void main() {
       await press('sign');
       await press('3');
       expect(c.active!.memos['4:c:0'], '-3');
-      await press('clear');
+      await tester.longPress(find.byKey(const ValueKey('pad-back')));
+      await tester.pump();
       expect(c.active!.memos.containsKey('4:c:0'), isFalse);
       await tester.tap(find.byKey(ValueKey('answer-${problem.hidden.first}')));
       await press('sign');
@@ -304,9 +440,9 @@ void main() {
       await tester.pumpAndSettle();
       expect(c.records, isEmpty);
       expect(find.text('첫 번째 기록을 기다리고 있어요.'), findsOneWidget);
-      await tester.tap(find.text('연습'));
+      await tester.tap(find.text('비타민'));
       await tester.pumpAndSettle();
-      expect(find.text('0'), findsNWidgets(3));
+      expect(find.text('0'), findsNWidgets(2));
       expect(c.active, same(active));
       expect(c.active!.memos['0:r:0'], '456');
       expect(tester.takeException(), isNull);
@@ -534,7 +670,9 @@ void main() {
 
     await tester.ensureVisible(find.text('곱셈'));
 
-    await tester.tap(find.text('곱셈'));
+    await tester.tap(
+      find.byKey(const ValueKey('vitamin-start-multiplication')),
+    );
 
     await tester.pumpAndSettle();
     await tester.ensureVisible(find.text('시작'));
@@ -546,7 +684,7 @@ void main() {
     await close(tester, c);
   });
   testWidgets(
-    'back confirms discard, cancellation and background keep time running',
+    'back confirms discard; background freezes time and preserves work',
     (tester) async {
       size(tester, const Size(390, 844));
       final disk = MemoryPersistence();
@@ -566,13 +704,18 @@ void main() {
       expect(session.memos['0:r:0'], '456');
       tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.paused);
       await tester.pump();
+      expect(session.isTimingPaused, isTrue);
+      final frozen = session.elapsedAt(DateTime.now());
+      await tester.pump(const Duration(minutes: 7));
+      expect(
+        session.elapsedAt(DateTime.now().add(const Duration(minutes: 7))),
+        frozen,
+      );
       tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.resumed);
       await tester.pump();
       expect(c.active, same(session));
-      expect(
-        session.elapsedAt(session.startedAt.add(const Duration(minutes: 7))),
-        420,
-      );
+      expect(session.isTimingPaused, isFalse);
+      expect(session.memos['0:r:0'], '456');
       await tester.binding.handlePopRoute();
       await tester.pumpAndSettle();
       expect(find.text('이번 연습을 그만둘까요?'), findsOneWidget);

@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'model.dart';
+import 'psat_model.dart';
 
 abstract class Persistence {
   Future<String?> read();
@@ -23,6 +24,7 @@ class AppController extends ChangeNotifier {
   final Persistence persistence;
   AppController(this.persistence);
   List<PracticeSession> records = [];
+  List<PsatAttempt> psatRecords = [];
   PracticeSession? active;
   String? error;
   bool loadFailed = false;
@@ -40,7 +42,20 @@ class AppController extends ChangeNotifier {
       final raw = await persistence.read();
       if (raw != null) {
         final data = decode(raw);
+        final rawPsat =
+            (jsonDecode(raw) as Map<String, dynamic>)['psatRecords'] as List? ??
+            [];
+        final nextPsat = rawPsat
+            .map(
+              (x) => PsatAttempt.fromJson(Map<String, dynamic>.from(x as Map)),
+            )
+            .toList();
+        if (nextPsat.map((a) => a.id).toSet().length != nextPsat.length) {
+          throw const FormatException('중복된 기출 기록');
+        }
+        nextPsat.sort((a, b) => b.completedAt.compareTo(a.completedAt));
         records = data.$1;
+        psatRecords = nextPsat;
         active =
             null; // Unfinished legacy sessions are intentionally not resumed.
       }
@@ -73,6 +88,7 @@ class AppController extends ChangeNotifier {
 
   String encode({
     List<PracticeSession>? history,
+    List<PsatAttempt>? psatHistory,
     PracticeSession? current,
     bool omitActive = false,
   }) => jsonEncode({
@@ -80,6 +96,7 @@ class AppController extends ChangeNotifier {
     'format': 1,
     'records': (history ?? records).map((r) => r.toJson()).toList(),
     'active': null,
+    'psatRecords': (psatHistory ?? psatRecords).map((a) => a.toJson()).toList(),
   });
   Future<void> _write(String data) {
     final next = _tail.then((_) => persistence.write(data));
@@ -159,7 +176,7 @@ class AppController extends ChangeNotifier {
     final session = active;
     if (session == null) throw StateError('진행 중인 연습이 없습니다.');
     final completed = PracticeSession.fromJson(session.toJson());
-    completed.elapsedSeconds = completed.elapsedAt(endedAt);
+    completed.elapsedSeconds = session.elapsedAt(endedAt);
     completed.completedAt = endedAt;
     final next = [completed, ...records];
     await _change(encode(history: next, omitActive: true), () {
@@ -177,10 +194,24 @@ class AppController extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> savePsat(PsatAttempt attempt) async {
+    if (loadFailed) throw StateError('기록을 읽을 수 없습니다.');
+    if (psatRecords.any((a) => a.id == attempt.id)) {
+      throw StateError('이미 저장된 풀이입니다.');
+    }
+    final next = [attempt, ...psatRecords];
+    await _change(encode(psatHistory: next), () {
+      psatRecords = next;
+      error = null;
+    });
+    notifyListeners();
+  }
+
   Future<void> resetHistory() async {
     if (loadFailed) throw StateError('기록을 읽을 수 없습니다.');
-    await _change(encode(history: []), () {
+    await _change(encode(history: [], psatHistory: []), () {
       records = [];
+      psatRecords = [];
       error = null;
     });
     notifyListeners();

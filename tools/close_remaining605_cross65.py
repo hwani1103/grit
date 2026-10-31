@@ -1,0 +1,28 @@
+import review_remaining605 as r
+b=r.folder(65);assert not (b/'cross-verification.json').exists()
+for n in ['host-before.log','host-after.log']:assert 'All tests passed!' in (b/n).read_text(encoding='utf-8-sig')
+for n in ['own-source-models.json','source-key-checks.json','repair-semantic-checks.json','preservation-check.json']:assert r.read(b/n)['status']=='PASS'
+assert r.sha(b/'own-solves.json')==r.read(b/'solve-frozen.json')['sha256']
+old={q['id']:q for q in r.read(b/'before.json')};changes=r.read(r.OUT/'changes-batch65.json');bank=r.bank();changed={c['id'] for c in changes}
+for c in changes:c['status']='verified'
+r.write(r.OUT/'changes-batch65.json',changes)
+for i,q in old.items():
+ assert all(bank[i][k]==q[k] for k in ['answer','choices'])
+ assert all(''.join(bank[i][k][j].split())==''.join(q[k][j].split()) for k in ['steps','optionReasons'] for j in range(5))
+ if i not in changed:assert bank[i]==q
+p=r.OUT/'cross-candidates-data-raster-prose.json';v=r.read(p)
+for x in v['candidates']:
+ if x['id'] in old:x.update(status='original_cause_and_host_reverified',evidence='batch65/cross-verification.json')
+r.write(p,v)
+p=r.OUT/'cross-candidates-structure-and-extrema.json';v=r.read(p)
+for x in v:
+ if x['id'] in ['2025-11-15-d-24']:x.update(status='source_key_semantics_and_host_reverified',evidence='batch65/cross-verification.json')
+r.write(p,v)
+p=r.OUT/'cross-validation.json';v=r.read(p)
+for x in r.read(b/'followup-assessment.json')['items']:
+ row=dict(id=x['id'],batch=65,evidence='batch65/cross-verification.json',status='source_key_semantics_and_host_reverified',historicalScorePreserved=x['historicalScorePreserved'],currentAssessmentBeforeRepair=x['currentBeforeScore'],changed=x['id'] in changed,causeFamilies=['raster-prose-readability','graph-labels','weighted-extrema','percentage-boundary'])
+ v.setdefault('relatedPrior295Reviews' if x['cohort']=='prior295' else 'associated605Reviews',[]).append(row)
+r.write(p,v)
+r.write(b/'visual-review.json',dict(status='PASS',originals='All10 original regions inspected including shared pages;31 fresh source figure crops matched. Trimmed-mean bounds enumerated; growth, temperature peaks, election counts, land metrics, admission rates, ship graph legends and income baselines recalculated.',before='All10 native390 starts inspected.',after='All10 native390 starts inspected and revised report/choice text checked against original; original charts and formulas remain in order.',hostNotDevice=True))
+r.write(b/'cross-verification.json',dict(status='verified',verifiedAt=r.now(),count=10,new605Count=0,associated605Rechecked=0,prior295Rechecked=10,changed=9,immutableOriginalScoresPreserved=True,own='own-solves.json',models='own-source-models.json',source='source-key-checks.json',repair='repair-semantic-checks.json',hostLogs=['host-before.log','host-after.log'],hostSuccessfulTestCount=12,visual='visual-review.json',preservation='preservation-check.json',limitations='Same-author targeted cross-review; ten prior295 historical scores retained. All original graphical structures and ship charts retained.'))
+print('Cross65 closed:10 prior295;9 raster-prose repairs')

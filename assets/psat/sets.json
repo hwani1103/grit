@@ -1,0 +1,1625 @@
+{
+  "schemaVersion": 1,
+  "sets": [
+    {
+      "id": "psat-data-001",
+      "subject": "자료해석",
+      "order": 3,
+      "questionIds": [
+        "2023-07-22-d-02",
+        "2023-07-22-d-03",
+        "2023-07-22-d-04",
+        "2023-07-22-d-06",
+        "2023-07-22-d-09",
+        "2023-07-22-d-11",
+        "2023-07-22-d-12",
+        "2023-07-22-d-14",
+        "2023-07-22-d-17",
+        "2023-07-22-d-19"
+      ],
+      "difficulty": "혼합"
+    },
+    {
+      "id": "psat-verbal-001",
+      "subject": "언어논리",
+      "order": 5,
+      "questionIds": [
+        "2023-07-22-l-03",
+        "2023-07-22-l-04",
+        "2023-07-22-l-08",
+        "2023-07-22-l-09",
+        "2023-07-22-l-10",
+        "2023-07-22-l-11",
+        "2023-07-22-l-12",
+        "2023-07-22-l-14",
+        "2023-07-22-l-15",
+        "2023-07-22-l-16"
+      ],
+      "difficulty": "혼합"
+    },
+    {
+      "id": "psat-situation-001",
+      "subject": "상황판단",
+      "order": 4,
+      "questionIds": [
+        "2023-07-22-s-02",
+        "2023-07-22-s-04",
+        "2023-07-22-s-06",
+        "2023-07-22-s-08",
+        "2023-07-22-s-11",
+        "2023-07-22-s-12",
+        "2023-07-22-s-13",
+        "2023-07-22-s-14",
+        "2023-07-22-s-15",
+        "2023-07-22-s-16"
+      ],
+      "difficulty": "혼합"
+    },
+    {
+      "id": "psat-verbal-002",
+      "subject": "언어논리",
+      "order": 1,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-l-01",
+        "kr-mpm-2024-07-27-psat-l-02",
+        "kr-mpm-2024-07-27-psat-l-03",
+        "kr-mpm-2024-07-27-psat-l-04",
+        "kr-mpm-2024-07-27-psat-l-05",
+        "kr-mpm-2024-07-27-psat-l-06",
+        "kr-mpm-2024-07-27-psat-l-07",
+        "kr-mpm-2024-07-27-psat-l-08",
+        "kr-mpm-2024-07-27-psat-l-09",
+        "kr-mpm-2024-07-27-psat-l-10"
+      ]
+    },
+    {
+      "id": "psat-situation-002",
+      "subject": "상황판단",
+      "order": 1,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-s-01",
+        "kr-mpm-2024-07-27-psat-s-02",
+        "kr-mpm-2024-07-27-psat-s-03",
+        "kr-mpm-2024-07-27-psat-s-04",
+        "kr-mpm-2024-07-27-psat-s-05",
+        "kr-mpm-2024-07-27-psat-s-06",
+        "kr-mpm-2024-07-27-psat-s-07",
+        "kr-mpm-2024-07-27-psat-s-08",
+        "kr-mpm-2024-07-27-psat-s-09",
+        "kr-mpm-2024-07-27-psat-s-10"
+      ]
+    },
+    {
+      "id": "psat-data-002",
+      "subject": "자료해석",
+      "order": 1,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-d-01",
+        "kr-mpm-2024-07-27-psat-d-02",
+        "kr-mpm-2024-07-27-psat-d-03",
+        "kr-mpm-2024-07-27-psat-d-04",
+        "kr-mpm-2024-07-27-psat-d-05",
+        "kr-mpm-2024-07-27-psat-d-06",
+        "kr-mpm-2024-07-27-psat-d-07",
+        "kr-mpm-2024-07-27-psat-d-08",
+        "kr-mpm-2024-07-27-psat-d-09",
+        "kr-mpm-2024-07-27-psat-d-10"
+      ]
+    },
+    {
+      "id": "psat-verbal-003",
+      "subject": "언어논리",
+      "order": 22,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-l-11",
+        "kr-mpm-2024-07-27-psat-l-12",
+        "kr-mpm-2024-07-27-psat-l-13",
+        "kr-mpm-2024-07-27-psat-l-14",
+        "kr-mpm-2024-07-27-psat-l-15",
+        "kr-mpm-2024-07-27-psat-l-16",
+        "kr-mpm-2024-07-27-psat-l-17",
+        "kr-mpm-2024-07-27-psat-l-18",
+        "kr-mpm-2024-07-27-psat-l-19",
+        "kr-mpm-2024-07-27-psat-l-20"
+      ]
+    },
+    {
+      "id": "psat-situation-003",
+      "subject": "상황판단",
+      "order": 23,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-s-11",
+        "kr-mpm-2024-07-27-psat-s-12",
+        "kr-mpm-2024-07-27-psat-s-13",
+        "kr-mpm-2024-07-27-psat-s-14",
+        "kr-mpm-2024-07-27-psat-s-15",
+        "kr-mpm-2024-07-27-psat-s-16",
+        "kr-mpm-2024-07-27-psat-s-17",
+        "kr-mpm-2024-07-27-psat-s-18",
+        "kr-mpm-2024-07-27-psat-s-19",
+        "kr-mpm-2024-07-27-psat-s-20"
+      ]
+    },
+    {
+      "id": "psat-data-003",
+      "subject": "자료해석",
+      "order": 22,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2024-07-27-psat-d-11",
+        "kr-mpm-2024-07-27-psat-d-12",
+        "kr-mpm-2024-07-27-psat-d-13",
+        "kr-mpm-2024-07-27-psat-d-14",
+        "kr-mpm-2024-07-27-psat-d-15",
+        "kr-mpm-2024-07-27-psat-d-16",
+        "kr-mpm-2024-07-27-psat-d-17",
+        "kr-mpm-2024-07-27-psat-d-18",
+        "kr-mpm-2024-07-27-psat-d-19",
+        "kr-mpm-2024-07-27-psat-d-20"
+      ]
+    },
+    {
+      "id": "psat-verbal-004",
+      "subject": "언어논리",
+      "order": 23,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-l-17",
+        "kr-mpm-2023-07-22-psat-l-18",
+        "kr-mpm-2023-07-22-psat-l-19",
+        "kr-mpm-2023-07-22-psat-l-20",
+        "kr-mpm-2023-07-22-psat-l-21",
+        "kr-mpm-2024-07-27-psat-l-21",
+        "kr-mpm-2024-07-27-psat-l-22",
+        "kr-mpm-2024-07-27-psat-l-23",
+        "kr-mpm-2024-07-27-psat-l-24",
+        "kr-mpm-2024-07-27-psat-l-25"
+      ]
+    },
+    {
+      "id": "psat-situation-004",
+      "subject": "상황판단",
+      "order": 24,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-s-17",
+        "kr-mpm-2023-07-22-psat-s-18",
+        "kr-mpm-2023-07-22-psat-s-19",
+        "kr-mpm-2023-07-22-psat-s-20",
+        "kr-mpm-2023-07-22-psat-s-21",
+        "kr-mpm-2024-07-27-psat-s-21",
+        "kr-mpm-2024-07-27-psat-s-22",
+        "kr-mpm-2024-07-27-psat-s-23",
+        "kr-mpm-2024-07-27-psat-s-24",
+        "kr-mpm-2024-07-27-psat-s-25"
+      ]
+    },
+    {
+      "id": "psat-data-004",
+      "subject": "자료해석",
+      "order": 23,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-d-20",
+        "kr-mpm-2023-07-22-psat-d-21",
+        "kr-mpm-2023-07-22-psat-d-22",
+        "kr-mpm-2023-07-22-psat-d-23",
+        "kr-mpm-2023-07-22-psat-d-24",
+        "kr-mpm-2024-07-27-psat-d-21",
+        "kr-mpm-2024-07-27-psat-d-22",
+        "kr-mpm-2024-07-27-psat-d-23",
+        "kr-mpm-2024-07-27-psat-d-24",
+        "kr-mpm-2024-07-27-psat-d-25"
+      ]
+    },
+    {
+      "id": "psat-verbal-005",
+      "subject": "언어논리",
+      "order": 2,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-l-01",
+        "kr-mpm-2023-07-22-psat-l-02",
+        "kr-mpm-2023-07-22-psat-l-05",
+        "kr-mpm-2023-07-22-psat-l-06",
+        "kr-mpm-2023-07-22-psat-l-07",
+        "kr-mpm-2023-07-22-psat-l-13",
+        "kr-mpm-2023-07-22-psat-l-22",
+        "kr-mpm-2023-07-22-psat-l-23",
+        "kr-mpm-2023-07-22-psat-l-24",
+        "kr-mpm-2023-07-22-psat-l-25"
+      ]
+    },
+    {
+      "id": "psat-situation-005",
+      "subject": "상황판단",
+      "order": 5,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-s-01",
+        "kr-mpm-2023-07-22-psat-s-03",
+        "kr-mpm-2023-07-22-psat-s-05",
+        "kr-mpm-2023-07-22-psat-s-07",
+        "kr-mpm-2023-07-22-psat-s-09",
+        "kr-mpm-2023-07-22-psat-s-10",
+        "kr-mpm-2023-07-22-psat-s-22",
+        "kr-mpm-2023-07-22-psat-s-23",
+        "kr-mpm-2023-07-22-psat-s-24",
+        "kr-mpm-2023-07-22-psat-s-25"
+      ]
+    },
+    {
+      "id": "psat-data-005",
+      "subject": "자료해석",
+      "order": 4,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-07-22-psat-d-01",
+        "kr-mpm-2023-07-22-psat-d-05",
+        "kr-mpm-2023-07-22-psat-d-07",
+        "kr-mpm-2023-07-22-psat-d-08",
+        "kr-mpm-2023-07-22-psat-d-10",
+        "kr-mpm-2023-07-22-psat-d-13",
+        "kr-mpm-2023-07-22-psat-d-15",
+        "kr-mpm-2023-07-22-psat-d-16",
+        "kr-mpm-2023-07-22-psat-d-18",
+        "kr-mpm-2023-07-22-psat-d-25"
+      ]
+    },
+    {
+      "id": "psat-verbal-006",
+      "subject": "언어논리",
+      "order": 3,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-l-01",
+        "kr-mpm-2025-07-19-psat-l-02",
+        "kr-mpm-2025-07-19-psat-l-03",
+        "kr-mpm-2025-07-19-psat-l-04",
+        "kr-mpm-2025-07-19-psat-l-05",
+        "kr-mpm-2025-07-19-psat-l-06",
+        "kr-mpm-2025-07-19-psat-l-07",
+        "kr-mpm-2025-07-19-psat-l-08",
+        "kr-mpm-2025-07-19-psat-l-09",
+        "kr-mpm-2025-07-19-psat-l-10"
+      ]
+    },
+    {
+      "id": "psat-situation-006",
+      "subject": "상황판단",
+      "order": 2,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-s-01",
+        "kr-mpm-2025-07-19-psat-s-02",
+        "kr-mpm-2025-07-19-psat-s-03",
+        "kr-mpm-2025-07-19-psat-s-04",
+        "kr-mpm-2025-07-19-psat-s-05",
+        "kr-mpm-2025-07-19-psat-s-06",
+        "kr-mpm-2025-07-19-psat-s-07",
+        "kr-mpm-2025-07-19-psat-s-08",
+        "kr-mpm-2025-07-19-psat-s-09",
+        "kr-mpm-2025-07-19-psat-s-10"
+      ]
+    },
+    {
+      "id": "psat-data-006",
+      "subject": "자료해석",
+      "order": 2,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-d-01",
+        "kr-mpm-2025-07-19-psat-d-02",
+        "kr-mpm-2025-07-19-psat-d-03",
+        "kr-mpm-2025-07-19-psat-d-04",
+        "kr-mpm-2025-07-19-psat-d-05",
+        "kr-mpm-2025-07-19-psat-d-06",
+        "kr-mpm-2025-07-19-psat-d-07",
+        "kr-mpm-2025-07-19-psat-d-08",
+        "kr-mpm-2025-07-19-psat-d-09",
+        "kr-mpm-2025-07-19-psat-d-10"
+      ]
+    },
+    {
+      "id": "psat-verbal-007",
+      "subject": "언어논리",
+      "order": 6,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-l-11",
+        "kr-mpm-2025-07-19-psat-l-12",
+        "kr-mpm-2025-07-19-psat-l-13",
+        "kr-mpm-2025-07-19-psat-l-14",
+        "kr-mpm-2025-07-19-psat-l-15",
+        "kr-mpm-2025-07-19-psat-l-16",
+        "kr-mpm-2025-07-19-psat-l-17",
+        "kr-mpm-2025-07-19-psat-l-18",
+        "kr-mpm-2025-07-19-psat-l-19",
+        "kr-mpm-2025-07-19-psat-l-20"
+      ]
+    },
+    {
+      "id": "psat-situation-007",
+      "subject": "상황판단",
+      "order": 6,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-s-11",
+        "kr-mpm-2025-07-19-psat-s-12",
+        "kr-mpm-2025-07-19-psat-s-13",
+        "kr-mpm-2025-07-19-psat-s-14",
+        "kr-mpm-2025-07-19-psat-s-15",
+        "kr-mpm-2025-07-19-psat-s-16",
+        "kr-mpm-2025-07-19-psat-s-17",
+        "kr-mpm-2025-07-19-psat-s-18",
+        "kr-mpm-2025-07-19-psat-s-19",
+        "kr-mpm-2025-07-19-psat-s-20"
+      ]
+    },
+    {
+      "id": "psat-data-007",
+      "subject": "자료해석",
+      "order": 5,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-d-11",
+        "kr-mpm-2025-07-19-psat-d-12",
+        "kr-mpm-2025-07-19-psat-d-13",
+        "kr-mpm-2025-07-19-psat-d-14",
+        "kr-mpm-2025-07-19-psat-d-15",
+        "kr-mpm-2025-07-19-psat-d-16",
+        "kr-mpm-2025-07-19-psat-d-17",
+        "kr-mpm-2025-07-19-psat-d-18",
+        "kr-mpm-2025-07-19-psat-d-19",
+        "kr-mpm-2025-07-19-psat-d-20"
+      ]
+    },
+    {
+      "id": "psat-verbal-008",
+      "subject": "언어논리",
+      "order": 7,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-l-21",
+        "kr-mpm-2025-07-19-psat-l-22",
+        "kr-mpm-2025-07-19-psat-l-23",
+        "kr-mpm-2025-07-19-psat-l-24",
+        "kr-mpm-2025-07-19-psat-l-25",
+        "kr-mpm-2021-07-10-psat-l-01",
+        "kr-mpm-2021-07-10-psat-l-02",
+        "kr-mpm-2021-07-10-psat-l-03",
+        "kr-mpm-2021-07-10-psat-l-04",
+        "kr-mpm-2021-07-10-psat-l-05"
+      ]
+    },
+    {
+      "id": "psat-situation-008",
+      "subject": "상황판단",
+      "order": 7,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-s-21",
+        "kr-mpm-2025-07-19-psat-s-22",
+        "kr-mpm-2025-07-19-psat-s-23",
+        "kr-mpm-2025-07-19-psat-s-24",
+        "kr-mpm-2025-07-19-psat-s-25",
+        "kr-mpm-2021-07-10-psat-s-01",
+        "kr-mpm-2021-07-10-psat-s-02",
+        "kr-mpm-2021-07-10-psat-s-03",
+        "kr-mpm-2021-07-10-psat-s-04",
+        "kr-mpm-2021-07-10-psat-s-05"
+      ]
+    },
+    {
+      "id": "psat-data-008",
+      "subject": "자료해석",
+      "order": 6,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-07-19-psat-d-21",
+        "kr-mpm-2025-07-19-psat-d-22",
+        "kr-mpm-2025-07-19-psat-d-23",
+        "kr-mpm-2025-07-19-psat-d-24",
+        "kr-mpm-2025-07-19-psat-d-25",
+        "kr-mpm-2021-07-10-psat-d-01",
+        "kr-mpm-2021-07-10-psat-d-02",
+        "kr-mpm-2021-07-10-psat-d-03",
+        "kr-mpm-2021-07-10-psat-d-04",
+        "kr-mpm-2021-07-10-psat-d-05"
+      ]
+    },
+    {
+      "id": "psat-verbal-009",
+      "subject": "언어논리",
+      "order": 8,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-l-06",
+        "kr-mpm-2021-07-10-psat-l-07",
+        "kr-mpm-2021-07-10-psat-l-08",
+        "kr-mpm-2021-07-10-psat-l-09",
+        "kr-mpm-2021-07-10-psat-l-10",
+        "kr-mpm-2021-07-10-psat-l-11",
+        "kr-mpm-2021-07-10-psat-l-12",
+        "kr-mpm-2021-07-10-psat-l-13",
+        "kr-mpm-2021-07-10-psat-l-14",
+        "kr-mpm-2021-07-10-psat-l-15"
+      ]
+    },
+    {
+      "id": "psat-situation-009",
+      "subject": "상황판단",
+      "order": 8,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-s-06",
+        "kr-mpm-2021-07-10-psat-s-07",
+        "kr-mpm-2021-07-10-psat-s-08",
+        "kr-mpm-2021-07-10-psat-s-09",
+        "kr-mpm-2021-07-10-psat-s-10",
+        "kr-mpm-2021-07-10-psat-s-11",
+        "kr-mpm-2021-07-10-psat-s-12",
+        "kr-mpm-2021-07-10-psat-s-13",
+        "kr-mpm-2021-07-10-psat-s-14",
+        "kr-mpm-2021-07-10-psat-s-15"
+      ]
+    },
+    {
+      "id": "psat-data-009",
+      "subject": "자료해석",
+      "order": 7,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-d-06",
+        "kr-mpm-2021-07-10-psat-d-07",
+        "kr-mpm-2021-07-10-psat-d-08",
+        "kr-mpm-2021-07-10-psat-d-09",
+        "kr-mpm-2021-07-10-psat-d-10",
+        "kr-mpm-2021-07-10-psat-d-11",
+        "kr-mpm-2021-07-10-psat-d-12",
+        "kr-mpm-2021-07-10-psat-d-13",
+        "kr-mpm-2021-07-10-psat-d-14",
+        "kr-mpm-2021-07-10-psat-d-15"
+      ]
+    },
+    {
+      "id": "psat-verbal-010",
+      "subject": "언어논리",
+      "order": 9,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-l-16",
+        "kr-mpm-2021-07-10-psat-l-17",
+        "kr-mpm-2021-07-10-psat-l-18",
+        "kr-mpm-2021-07-10-psat-l-19",
+        "kr-mpm-2021-07-10-psat-l-21",
+        "kr-mpm-2021-07-10-psat-l-22",
+        "kr-mpm-2021-07-10-psat-l-23",
+        "kr-mpm-2021-07-10-psat-l-24",
+        "kr-mpm-2021-07-10-psat-l-25",
+        "kr-mpm-2025-11-15-psat-l-01"
+      ]
+    },
+    {
+      "id": "psat-situation-010",
+      "subject": "상황판단",
+      "order": 9,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-s-16",
+        "kr-mpm-2021-07-10-psat-s-17",
+        "kr-mpm-2021-07-10-psat-s-18",
+        "kr-mpm-2021-07-10-psat-s-19",
+        "kr-mpm-2021-07-10-psat-s-20",
+        "kr-mpm-2021-07-10-psat-s-21",
+        "kr-mpm-2021-07-10-psat-s-22",
+        "kr-mpm-2021-07-10-psat-s-23",
+        "kr-mpm-2021-07-10-psat-s-24",
+        "kr-mpm-2021-07-10-psat-s-25"
+      ]
+    },
+    {
+      "id": "psat-data-010",
+      "subject": "자료해석",
+      "order": 8,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2021-07-10-psat-d-16",
+        "kr-mpm-2021-07-10-psat-d-17",
+        "kr-mpm-2021-07-10-psat-d-18",
+        "kr-mpm-2021-07-10-psat-d-19",
+        "kr-mpm-2021-07-10-psat-d-20",
+        "kr-mpm-2021-07-10-psat-d-21",
+        "kr-mpm-2021-07-10-psat-d-22",
+        "kr-mpm-2021-07-10-psat-d-23",
+        "kr-mpm-2021-07-10-psat-d-24",
+        "kr-mpm-2021-07-10-psat-d-25"
+      ]
+    },
+    {
+      "id": "psat-verbal-011",
+      "subject": "언어논리",
+      "order": 10,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-l-02",
+        "kr-mpm-2025-11-15-psat-l-03",
+        "kr-mpm-2025-11-15-psat-l-04",
+        "kr-mpm-2025-11-15-psat-l-05",
+        "kr-mpm-2025-11-15-psat-l-06",
+        "kr-mpm-2025-11-15-psat-l-07",
+        "kr-mpm-2025-11-15-psat-l-09",
+        "kr-mpm-2025-11-15-psat-l-10",
+        "kr-mpm-2025-11-15-psat-l-11",
+        "kr-mpm-2025-11-15-psat-l-12"
+      ]
+    },
+    {
+      "id": "psat-situation-011",
+      "subject": "상황판단",
+      "order": 10,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-s-01",
+        "kr-mpm-2025-11-15-psat-s-02",
+        "kr-mpm-2025-11-15-psat-s-03",
+        "kr-mpm-2025-11-15-psat-s-04",
+        "kr-mpm-2025-11-15-psat-s-05",
+        "kr-mpm-2025-11-15-psat-s-06",
+        "kr-mpm-2025-11-15-psat-s-07",
+        "kr-mpm-2025-11-15-psat-s-08",
+        "kr-mpm-2025-11-15-psat-s-09",
+        "kr-mpm-2025-11-15-psat-s-10"
+      ]
+    },
+    {
+      "id": "psat-data-011",
+      "subject": "자료해석",
+      "order": 9,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-d-01",
+        "kr-mpm-2025-11-15-psat-d-02",
+        "kr-mpm-2025-11-15-psat-d-03",
+        "kr-mpm-2025-11-15-psat-d-04",
+        "kr-mpm-2025-11-15-psat-d-05",
+        "kr-mpm-2025-11-15-psat-d-06",
+        "kr-mpm-2025-11-15-psat-d-07",
+        "kr-mpm-2025-11-15-psat-d-08",
+        "kr-mpm-2025-11-15-psat-d-09",
+        "kr-mpm-2025-11-15-psat-d-10"
+      ]
+    },
+    {
+      "id": "psat-verbal-012",
+      "subject": "언어논리",
+      "order": 11,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-l-13",
+        "kr-mpm-2025-11-15-psat-l-14",
+        "kr-mpm-2025-11-15-psat-l-15",
+        "kr-mpm-2025-11-15-psat-l-16",
+        "kr-mpm-2025-11-15-psat-l-17",
+        "kr-mpm-2025-11-15-psat-l-18",
+        "kr-mpm-2025-11-15-psat-l-19",
+        "kr-mpm-2025-11-15-psat-l-20",
+        "kr-mpm-2025-11-15-psat-l-21",
+        "kr-mpm-2025-11-15-psat-l-22"
+      ]
+    },
+    {
+      "id": "psat-situation-012",
+      "subject": "상황판단",
+      "order": 11,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-s-11",
+        "kr-mpm-2025-11-15-psat-s-12",
+        "kr-mpm-2025-11-15-psat-s-13",
+        "kr-mpm-2025-11-15-psat-s-14",
+        "kr-mpm-2025-11-15-psat-s-15",
+        "kr-mpm-2025-11-15-psat-s-16",
+        "kr-mpm-2025-11-15-psat-s-17",
+        "kr-mpm-2025-11-15-psat-s-18",
+        "kr-mpm-2025-11-15-psat-s-19",
+        "kr-mpm-2025-11-15-psat-s-20"
+      ]
+    },
+    {
+      "id": "psat-data-012",
+      "subject": "자료해석",
+      "order": 10,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-d-11",
+        "kr-mpm-2025-11-15-psat-d-12",
+        "kr-mpm-2025-11-15-psat-d-13",
+        "kr-mpm-2025-11-15-psat-d-14",
+        "kr-mpm-2025-11-15-psat-d-15",
+        "kr-mpm-2025-11-15-psat-d-16",
+        "kr-mpm-2025-11-15-psat-d-17",
+        "kr-mpm-2025-11-15-psat-d-18",
+        "kr-mpm-2025-11-15-psat-d-19",
+        "kr-mpm-2025-11-15-psat-d-20"
+      ]
+    },
+    {
+      "id": "psat-verbal-013",
+      "subject": "언어논리",
+      "order": 12,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-l-23",
+        "kr-mpm-2025-11-15-psat-l-24",
+        "kr-mpm-2025-11-15-psat-l-25",
+        "kr-mpm-2026-07-18-psat-l-01",
+        "kr-mpm-2026-07-18-psat-l-03",
+        "kr-mpm-2026-07-18-psat-l-04",
+        "kr-mpm-2026-07-18-psat-l-06",
+        "kr-mpm-2026-07-18-psat-l-07",
+        "kr-mpm-2026-07-18-psat-l-08",
+        "kr-mpm-2026-07-18-psat-l-09"
+      ]
+    },
+    {
+      "id": "psat-situation-013",
+      "subject": "상황판단",
+      "order": 12,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-s-21",
+        "kr-mpm-2025-11-15-psat-s-22",
+        "kr-mpm-2025-11-15-psat-s-23",
+        "kr-mpm-2025-11-15-psat-s-24",
+        "kr-mpm-2025-11-15-psat-s-25",
+        "kr-mpm-2026-07-18-psat-s-01",
+        "kr-mpm-2026-07-18-psat-s-02",
+        "kr-mpm-2026-07-18-psat-s-03",
+        "kr-mpm-2026-07-18-psat-s-04",
+        "kr-mpm-2026-07-18-psat-s-06"
+      ]
+    },
+    {
+      "id": "psat-data-013",
+      "subject": "자료해석",
+      "order": 11,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2025-11-15-psat-d-21",
+        "kr-mpm-2025-11-15-psat-d-22",
+        "kr-mpm-2025-11-15-psat-d-23",
+        "kr-mpm-2025-11-15-psat-d-24",
+        "kr-mpm-2025-11-15-psat-d-25",
+        "kr-mpm-2026-07-18-psat-d-01",
+        "kr-mpm-2026-07-18-psat-d-02",
+        "kr-mpm-2026-07-18-psat-d-03",
+        "kr-mpm-2026-07-18-psat-d-04",
+        "kr-mpm-2026-07-18-psat-d-05"
+      ]
+    },
+    {
+      "id": "psat-verbal-014",
+      "subject": "언어논리",
+      "order": 13,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-l-10",
+        "kr-mpm-2026-07-18-psat-l-11",
+        "kr-mpm-2026-07-18-psat-l-12",
+        "kr-mpm-2026-07-18-psat-l-13",
+        "kr-mpm-2026-07-18-psat-l-14",
+        "kr-mpm-2026-07-18-psat-l-15",
+        "kr-mpm-2026-07-18-psat-l-16",
+        "kr-mpm-2026-07-18-psat-l-17",
+        "kr-mpm-2026-07-18-psat-l-18",
+        "kr-mpm-2026-07-18-psat-l-19"
+      ]
+    },
+    {
+      "id": "psat-situation-014",
+      "subject": "상황판단",
+      "order": 13,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-s-07",
+        "kr-mpm-2026-07-18-psat-s-08",
+        "kr-mpm-2026-07-18-psat-s-09",
+        "kr-mpm-2026-07-18-psat-s-10",
+        "kr-mpm-2026-07-18-psat-s-11",
+        "kr-mpm-2026-07-18-psat-s-12",
+        "kr-mpm-2026-07-18-psat-s-13",
+        "kr-mpm-2026-07-18-psat-s-14",
+        "kr-mpm-2026-07-18-psat-s-15",
+        "kr-mpm-2026-07-18-psat-s-16"
+      ]
+    },
+    {
+      "id": "psat-data-014",
+      "subject": "자료해석",
+      "order": 12,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-d-06",
+        "kr-mpm-2026-07-18-psat-d-07",
+        "kr-mpm-2026-07-18-psat-d-08",
+        "kr-mpm-2026-07-18-psat-d-09",
+        "kr-mpm-2026-07-18-psat-d-10",
+        "kr-mpm-2026-07-18-psat-d-11",
+        "kr-mpm-2026-07-18-psat-d-12",
+        "kr-mpm-2026-07-18-psat-d-13",
+        "kr-mpm-2026-07-18-psat-d-14",
+        "kr-mpm-2026-07-18-psat-d-15"
+      ]
+    },
+    {
+      "id": "psat-verbal-015",
+      "subject": "언어논리",
+      "order": 14,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-l-20",
+        "kr-mpm-2026-07-18-psat-l-21",
+        "kr-mpm-2026-07-18-psat-l-22",
+        "kr-mpm-2026-07-18-psat-l-23",
+        "kr-mpm-2026-07-18-psat-l-24",
+        "kr-mpm-2026-07-18-psat-l-25",
+        "kr-mpm-2026-03-07-psat-l-13",
+        "kr-mpm-2026-03-07-psat-l-14",
+        "kr-mpm-2026-03-07-psat-l-33",
+        "kr-mpm-2026-03-07-psat-l-34"
+      ]
+    },
+    {
+      "id": "psat-situation-015",
+      "subject": "상황판단",
+      "order": 14,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-s-17",
+        "kr-mpm-2026-07-18-psat-s-18",
+        "kr-mpm-2026-07-18-psat-s-19",
+        "kr-mpm-2026-07-18-psat-s-20",
+        "kr-mpm-2026-07-18-psat-s-21",
+        "kr-mpm-2026-07-18-psat-s-22",
+        "kr-mpm-2026-07-18-psat-s-23",
+        "kr-mpm-2026-07-18-psat-s-24",
+        "kr-mpm-2026-07-18-psat-s-25",
+        "kr-mpm-2026-03-07-psat-s-13"
+      ]
+    },
+    {
+      "id": "psat-data-015",
+      "subject": "자료해석",
+      "order": 13,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-07-18-psat-d-16",
+        "kr-mpm-2026-07-18-psat-d-17",
+        "kr-mpm-2026-07-18-psat-d-18",
+        "kr-mpm-2026-07-18-psat-d-19",
+        "kr-mpm-2026-07-18-psat-d-20",
+        "kr-mpm-2026-07-18-psat-d-21",
+        "kr-mpm-2026-07-18-psat-d-22",
+        "kr-mpm-2026-07-18-psat-d-23",
+        "kr-mpm-2026-07-18-psat-d-24",
+        "kr-mpm-2026-07-18-psat-d-25"
+      ]
+    },
+    {
+      "id": "psat-verbal-016",
+      "subject": "언어논리",
+      "order": 24,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-l-15",
+        "kr-mpm-2026-03-07-psat-l-16",
+        "kr-mpm-2026-03-07-psat-l-17",
+        "kr-mpm-2026-03-07-psat-l-18",
+        "kr-mpm-2026-03-07-psat-l-19",
+        "kr-mpm-2026-03-07-psat-l-20",
+        "kr-mpm-2026-03-07-psat-l-25",
+        "kr-mpm-2026-03-07-psat-l-26",
+        "kr-mpm-2026-03-07-psat-l-27",
+        "kr-mpm-2026-03-07-psat-l-28"
+      ]
+    },
+    {
+      "id": "psat-situation-016",
+      "subject": "상황판단",
+      "order": 25,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-s-14",
+        "kr-mpm-2026-03-07-psat-s-15",
+        "kr-mpm-2026-03-07-psat-s-18",
+        "kr-mpm-2026-03-07-psat-s-27",
+        "kr-mpm-2026-03-07-psat-s-28",
+        "kr-mpm-2026-03-07-psat-s-33",
+        "kr-mpm-2026-03-07-psat-s-34",
+        "kr-mpm-2026-03-07-psat-s-35",
+        "kr-mpm-2026-03-07-psat-s-37",
+        "kr-mpm-2026-03-07-psat-s-38"
+      ]
+    },
+    {
+      "id": "psat-data-016",
+      "subject": "자료해석",
+      "order": 14,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-d-01",
+        "kr-mpm-2026-03-07-psat-d-02",
+        "kr-mpm-2026-03-07-psat-d-03",
+        "kr-mpm-2026-03-07-psat-d-04",
+        "kr-mpm-2026-03-07-psat-d-05",
+        "kr-mpm-2026-03-07-psat-d-06",
+        "kr-mpm-2026-03-07-psat-d-07",
+        "kr-mpm-2026-03-07-psat-d-08",
+        "kr-mpm-2026-03-07-psat-d-09",
+        "kr-mpm-2026-03-07-psat-d-10"
+      ]
+    },
+    {
+      "id": "psat-verbal-017",
+      "subject": "언어논리",
+      "order": 25,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-l-30",
+        "kr-mpm-2026-03-07-psat-l-31",
+        "kr-mpm-2026-03-07-psat-l-32",
+        "kr-mpm-2026-03-07-psat-l-35",
+        "kr-mpm-2026-03-07-psat-l-39",
+        "kr-mpm-2026-03-07-psat-l-40",
+        "kr-mpm-2025-03-08-psat-l-13",
+        "kr-mpm-2025-03-08-psat-l-14",
+        "kr-mpm-2025-03-08-psat-l-33",
+        "kr-mpm-2025-03-08-psat-l-34"
+      ]
+    },
+    {
+      "id": "psat-situation-017",
+      "subject": "상황판단",
+      "order": 15,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-s-16",
+        "kr-mpm-2026-03-07-psat-s-17",
+        "kr-mpm-2026-03-07-psat-s-21",
+        "kr-mpm-2026-03-07-psat-s-22",
+        "kr-mpm-2026-03-07-psat-s-23",
+        "kr-mpm-2026-03-07-psat-s-24",
+        "kr-mpm-2026-03-07-psat-s-25",
+        "kr-mpm-2026-03-07-psat-s-26",
+        "kr-mpm-2026-03-07-psat-s-29",
+        "kr-mpm-2026-03-07-psat-s-30"
+      ]
+    },
+    {
+      "id": "psat-data-017",
+      "subject": "자료해석",
+      "order": 15,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-d-11",
+        "kr-mpm-2026-03-07-psat-d-12",
+        "kr-mpm-2026-03-07-psat-d-13",
+        "kr-mpm-2026-03-07-psat-d-14",
+        "kr-mpm-2026-03-07-psat-d-15",
+        "kr-mpm-2026-03-07-psat-d-16",
+        "kr-mpm-2026-03-07-psat-d-17",
+        "kr-mpm-2026-03-07-psat-d-18",
+        "kr-mpm-2026-03-07-psat-d-19",
+        "kr-mpm-2026-03-07-psat-d-20"
+      ]
+    },
+    {
+      "id": "psat-verbal-018",
+      "subject": "언어논리",
+      "order": 4,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-l-01",
+        "kr-mpm-2026-03-07-psat-l-02",
+        "kr-mpm-2026-03-07-psat-l-03",
+        "kr-mpm-2026-03-07-psat-l-04",
+        "kr-mpm-2026-03-07-psat-l-05",
+        "kr-mpm-2026-03-07-psat-l-06",
+        "kr-mpm-2026-03-07-psat-l-07",
+        "kr-mpm-2026-03-07-psat-l-08",
+        "kr-mpm-2026-03-07-psat-l-09",
+        "kr-mpm-2026-03-07-psat-l-10"
+      ]
+    },
+    {
+      "id": "psat-situation-018",
+      "subject": "상황판단",
+      "order": 3,
+      "difficulty": "기본",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-s-01",
+        "kr-mpm-2026-03-07-psat-s-02",
+        "kr-mpm-2026-03-07-psat-s-03",
+        "kr-mpm-2026-03-07-psat-s-04",
+        "kr-mpm-2026-03-07-psat-s-05",
+        "kr-mpm-2026-03-07-psat-s-06",
+        "kr-mpm-2026-03-07-psat-s-07",
+        "kr-mpm-2026-03-07-psat-s-08",
+        "kr-mpm-2026-03-07-psat-s-09",
+        "kr-mpm-2026-03-07-psat-s-10"
+      ]
+    },
+    {
+      "id": "psat-data-018",
+      "subject": "자료해석",
+      "order": 24,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-d-21",
+        "kr-mpm-2026-03-07-psat-d-22",
+        "kr-mpm-2026-03-07-psat-d-23",
+        "kr-mpm-2026-03-07-psat-d-24",
+        "kr-mpm-2026-03-07-psat-d-25",
+        "kr-mpm-2026-03-07-psat-d-26",
+        "kr-mpm-2026-03-07-psat-d-27",
+        "kr-mpm-2026-03-07-psat-d-28",
+        "kr-mpm-2026-03-07-psat-d-29",
+        "kr-mpm-2026-03-07-psat-d-30"
+      ]
+    },
+    {
+      "id": "psat-verbal-019",
+      "subject": "언어논리",
+      "order": 26,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-l-11",
+        "kr-mpm-2026-03-07-psat-l-12",
+        "kr-mpm-2026-03-07-psat-l-21",
+        "kr-mpm-2026-03-07-psat-l-22",
+        "kr-mpm-2026-03-07-psat-l-23",
+        "kr-mpm-2026-03-07-psat-l-24",
+        "kr-mpm-2026-03-07-psat-l-36",
+        "kr-mpm-2026-03-07-psat-l-37",
+        "kr-mpm-2026-03-07-psat-l-38",
+        "kr-mpm-2025-03-08-psat-l-01"
+      ]
+    },
+    {
+      "id": "psat-situation-019",
+      "subject": "상황판단",
+      "order": 26,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-s-11",
+        "kr-mpm-2026-03-07-psat-s-12",
+        "kr-mpm-2026-03-07-psat-s-19",
+        "kr-mpm-2026-03-07-psat-s-20",
+        "kr-mpm-2026-03-07-psat-s-31",
+        "kr-mpm-2026-03-07-psat-s-32",
+        "kr-mpm-2026-03-07-psat-s-36",
+        "kr-mpm-2026-03-07-psat-s-39",
+        "kr-mpm-2026-03-07-psat-s-40",
+        "kr-mpm-2025-03-08-psat-s-01"
+      ]
+    },
+    {
+      "id": "psat-data-019",
+      "subject": "자료해석",
+      "order": 29,
+      "difficulty": "고난도",
+      "questionIds": [
+        "kr-mpm-2026-03-07-psat-d-31",
+        "kr-mpm-2026-03-07-psat-d-32",
+        "kr-mpm-2026-03-07-psat-d-33",
+        "kr-mpm-2026-03-07-psat-d-34",
+        "kr-mpm-2026-03-07-psat-d-35",
+        "kr-mpm-2026-03-07-psat-d-36",
+        "kr-mpm-2026-03-07-psat-d-37",
+        "kr-mpm-2026-03-07-psat-d-38",
+        "kr-mpm-2026-03-07-psat-d-39",
+        "kr-mpm-2026-03-07-psat-d-40"
+      ]
+    },
+    {
+      "id": "psat-verbal-020",
+      "subject": "언어논리",
+      "order": 27,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-l-02",
+        "kr-mpm-2025-03-08-psat-l-03",
+        "kr-mpm-2025-03-08-psat-l-04",
+        "kr-mpm-2025-03-08-psat-l-05",
+        "kr-mpm-2025-03-08-psat-l-06",
+        "kr-mpm-2025-03-08-psat-l-07",
+        "kr-mpm-2025-03-08-psat-l-08",
+        "kr-mpm-2025-03-08-psat-l-09",
+        "kr-mpm-2025-03-08-psat-l-10",
+        "kr-mpm-2025-03-08-psat-l-11"
+      ]
+    },
+    {
+      "id": "psat-situation-020",
+      "subject": "상황판단",
+      "order": 27,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-s-02",
+        "kr-mpm-2025-03-08-psat-s-03",
+        "kr-mpm-2025-03-08-psat-s-04",
+        "kr-mpm-2025-03-08-psat-s-05",
+        "kr-mpm-2025-03-08-psat-s-06",
+        "kr-mpm-2025-03-08-psat-s-07",
+        "kr-mpm-2025-03-08-psat-s-08",
+        "kr-mpm-2025-03-08-psat-s-09",
+        "kr-mpm-2025-03-08-psat-s-10",
+        "kr-mpm-2025-03-08-psat-s-11"
+      ]
+    },
+    {
+      "id": "psat-data-020",
+      "subject": "자료해석",
+      "order": 25,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-d-01",
+        "kr-mpm-2025-03-08-psat-d-02",
+        "kr-mpm-2025-03-08-psat-d-03",
+        "kr-mpm-2025-03-08-psat-d-04",
+        "kr-mpm-2025-03-08-psat-d-05",
+        "kr-mpm-2025-03-08-psat-d-06",
+        "kr-mpm-2025-03-08-psat-d-07",
+        "kr-mpm-2025-03-08-psat-d-08",
+        "kr-mpm-2025-03-08-psat-d-09",
+        "kr-mpm-2025-03-08-psat-d-10"
+      ]
+    },
+    {
+      "id": "psat-verbal-021",
+      "subject": "언어논리",
+      "order": 28,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-l-12",
+        "kr-mpm-2025-03-08-psat-l-15",
+        "kr-mpm-2025-03-08-psat-l-16",
+        "kr-mpm-2025-03-08-psat-l-17",
+        "kr-mpm-2025-03-08-psat-l-18",
+        "kr-mpm-2025-03-08-psat-l-19",
+        "kr-mpm-2025-03-08-psat-l-20",
+        "kr-mpm-2025-03-08-psat-l-21",
+        "kr-mpm-2025-03-08-psat-l-22",
+        "kr-mpm-2025-03-08-psat-l-23"
+      ]
+    },
+    {
+      "id": "psat-situation-021",
+      "subject": "상황판단",
+      "order": 28,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-s-12",
+        "kr-mpm-2025-03-08-psat-s-13",
+        "kr-mpm-2025-03-08-psat-s-14",
+        "kr-mpm-2025-03-08-psat-s-15",
+        "kr-mpm-2025-03-08-psat-s-16",
+        "kr-mpm-2025-03-08-psat-s-17",
+        "kr-mpm-2025-03-08-psat-s-18",
+        "kr-mpm-2025-03-08-psat-s-19",
+        "kr-mpm-2025-03-08-psat-s-20",
+        "kr-mpm-2025-03-08-psat-s-21"
+      ]
+    },
+    {
+      "id": "psat-data-021",
+      "subject": "자료해석",
+      "order": 26,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-d-11",
+        "kr-mpm-2025-03-08-psat-d-12",
+        "kr-mpm-2025-03-08-psat-d-13",
+        "kr-mpm-2025-03-08-psat-d-14",
+        "kr-mpm-2025-03-08-psat-d-15",
+        "kr-mpm-2025-03-08-psat-d-16",
+        "kr-mpm-2025-03-08-psat-d-17",
+        "kr-mpm-2025-03-08-psat-d-18",
+        "kr-mpm-2025-03-08-psat-d-19",
+        "kr-mpm-2025-03-08-psat-d-20"
+      ]
+    },
+    {
+      "id": "psat-verbal-022",
+      "subject": "언어논리",
+      "order": 29,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-l-24",
+        "kr-mpm-2025-03-08-psat-l-25",
+        "kr-mpm-2025-03-08-psat-l-26",
+        "kr-mpm-2025-03-08-psat-l-27",
+        "kr-mpm-2025-03-08-psat-l-28",
+        "kr-mpm-2025-03-08-psat-l-29",
+        "kr-mpm-2025-03-08-psat-l-30",
+        "kr-mpm-2025-03-08-psat-l-31",
+        "kr-mpm-2025-03-08-psat-l-32",
+        "kr-mpm-2025-03-08-psat-l-35"
+      ]
+    },
+    {
+      "id": "psat-situation-022",
+      "subject": "상황판단",
+      "order": 29,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-s-22",
+        "kr-mpm-2025-03-08-psat-s-23",
+        "kr-mpm-2025-03-08-psat-s-24",
+        "kr-mpm-2025-03-08-psat-s-25",
+        "kr-mpm-2025-03-08-psat-s-26",
+        "kr-mpm-2025-03-08-psat-s-27",
+        "kr-mpm-2025-03-08-psat-s-28",
+        "kr-mpm-2025-03-08-psat-s-29",
+        "kr-mpm-2025-03-08-psat-s-30",
+        "kr-mpm-2025-03-08-psat-s-31"
+      ]
+    },
+    {
+      "id": "psat-data-022",
+      "subject": "자료해석",
+      "order": 27,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-d-21",
+        "kr-mpm-2025-03-08-psat-d-22",
+        "kr-mpm-2025-03-08-psat-d-23",
+        "kr-mpm-2025-03-08-psat-d-24",
+        "kr-mpm-2025-03-08-psat-d-25",
+        "kr-mpm-2025-03-08-psat-d-26",
+        "kr-mpm-2025-03-08-psat-d-27",
+        "kr-mpm-2025-03-08-psat-d-28",
+        "kr-mpm-2025-03-08-psat-d-29",
+        "kr-mpm-2025-03-08-psat-d-30"
+      ]
+    },
+    {
+      "id": "psat-verbal-023",
+      "subject": "언어논리",
+      "order": 30,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-l-36",
+        "kr-mpm-2025-03-08-psat-l-37",
+        "kr-mpm-2025-03-08-psat-l-38",
+        "kr-mpm-2025-03-08-psat-l-39",
+        "kr-mpm-2025-03-08-psat-l-40",
+        "kr-mpm-2024-03-02-psat-l-01",
+        "kr-mpm-2024-03-02-psat-l-02",
+        "kr-mpm-2024-03-02-psat-l-03",
+        "kr-mpm-2024-03-02-psat-l-04",
+        "kr-mpm-2024-03-02-psat-l-05"
+      ]
+    },
+    {
+      "id": "psat-situation-023",
+      "subject": "상황판단",
+      "order": 30,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-s-32",
+        "kr-mpm-2025-03-08-psat-s-33",
+        "kr-mpm-2025-03-08-psat-s-34",
+        "kr-mpm-2025-03-08-psat-s-35",
+        "kr-mpm-2025-03-08-psat-s-36",
+        "kr-mpm-2025-03-08-psat-s-37",
+        "kr-mpm-2025-03-08-psat-s-38",
+        "kr-mpm-2025-03-08-psat-s-39",
+        "kr-mpm-2025-03-08-psat-s-40",
+        "kr-mpm-2024-03-02-psat-s-01"
+      ]
+    },
+    {
+      "id": "psat-data-023",
+      "subject": "자료해석",
+      "order": 30,
+      "difficulty": "고난도",
+      "questionIds": [
+        "kr-mpm-2025-03-08-psat-d-32",
+        "kr-mpm-2025-03-08-psat-d-33",
+        "kr-mpm-2025-03-08-psat-d-35",
+        "kr-mpm-2025-03-08-psat-d-36",
+        "kr-mpm-2025-03-08-psat-d-37",
+        "kr-mpm-2025-03-08-psat-d-38",
+        "kr-mpm-2025-03-08-psat-d-39",
+        "kr-mpm-2025-03-08-psat-d-40",
+        "kr-mpm-2024-03-02-psat-d-01",
+        "kr-mpm-2024-03-02-psat-d-02"
+      ]
+    },
+    {
+      "id": "psat-verbal-024",
+      "subject": "언어논리",
+      "order": 15,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-l-06",
+        "kr-mpm-2024-03-02-psat-l-07",
+        "kr-mpm-2024-03-02-psat-l-08",
+        "kr-mpm-2024-03-02-psat-l-09",
+        "kr-mpm-2024-03-02-psat-l-10",
+        "kr-mpm-2024-03-02-psat-l-11",
+        "kr-mpm-2024-03-02-psat-l-12",
+        "kr-mpm-2024-03-02-psat-l-13",
+        "kr-mpm-2024-03-02-psat-l-14",
+        "kr-mpm-2024-03-02-psat-l-15"
+      ]
+    },
+    {
+      "id": "psat-situation-024",
+      "subject": "상황판단",
+      "order": 16,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-s-02",
+        "kr-mpm-2024-03-02-psat-s-03",
+        "kr-mpm-2024-03-02-psat-s-04",
+        "kr-mpm-2024-03-02-psat-s-05",
+        "kr-mpm-2024-03-02-psat-s-06",
+        "kr-mpm-2024-03-02-psat-s-07",
+        "kr-mpm-2024-03-02-psat-s-08",
+        "kr-mpm-2024-03-02-psat-s-09",
+        "kr-mpm-2024-03-02-psat-s-10",
+        "kr-mpm-2024-03-02-psat-s-11"
+      ]
+    },
+    {
+      "id": "psat-data-024",
+      "subject": "자료해석",
+      "order": 16,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-d-03",
+        "kr-mpm-2024-03-02-psat-d-04",
+        "kr-mpm-2024-03-02-psat-d-05",
+        "kr-mpm-2024-03-02-psat-d-06",
+        "kr-mpm-2024-03-02-psat-d-07",
+        "kr-mpm-2024-03-02-psat-d-08",
+        "kr-mpm-2024-03-02-psat-d-09",
+        "kr-mpm-2024-03-02-psat-d-10",
+        "kr-mpm-2024-03-02-psat-d-11",
+        "kr-mpm-2024-03-02-psat-d-12"
+      ]
+    },
+    {
+      "id": "psat-verbal-025",
+      "subject": "언어논리",
+      "order": 16,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-l-16",
+        "kr-mpm-2024-03-02-psat-l-17",
+        "kr-mpm-2024-03-02-psat-l-18",
+        "kr-mpm-2024-03-02-psat-l-19",
+        "kr-mpm-2024-03-02-psat-l-20",
+        "kr-mpm-2024-03-02-psat-l-21",
+        "kr-mpm-2024-03-02-psat-l-22",
+        "kr-mpm-2024-03-02-psat-l-23",
+        "kr-mpm-2024-03-02-psat-l-24",
+        "kr-mpm-2024-03-02-psat-l-25"
+      ]
+    },
+    {
+      "id": "psat-situation-025",
+      "subject": "상황판단",
+      "order": 17,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-s-12",
+        "kr-mpm-2024-03-02-psat-s-13",
+        "kr-mpm-2024-03-02-psat-s-14",
+        "kr-mpm-2024-03-02-psat-s-15",
+        "kr-mpm-2024-03-02-psat-s-16",
+        "kr-mpm-2024-03-02-psat-s-17",
+        "kr-mpm-2024-03-02-psat-s-18",
+        "kr-mpm-2024-03-02-psat-s-19",
+        "kr-mpm-2024-03-02-psat-s-20",
+        "kr-mpm-2024-03-02-psat-s-21"
+      ]
+    },
+    {
+      "id": "psat-data-025",
+      "subject": "자료해석",
+      "order": 17,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-d-14",
+        "kr-mpm-2024-03-02-psat-d-15",
+        "kr-mpm-2024-03-02-psat-d-16",
+        "kr-mpm-2024-03-02-psat-d-17",
+        "kr-mpm-2024-03-02-psat-d-18",
+        "kr-mpm-2024-03-02-psat-d-19",
+        "kr-mpm-2024-03-02-psat-d-20",
+        "kr-mpm-2024-03-02-psat-d-21",
+        "kr-mpm-2024-03-02-psat-d-22",
+        "kr-mpm-2024-03-02-psat-d-23"
+      ]
+    },
+    {
+      "id": "psat-verbal-026",
+      "subject": "언어논리",
+      "order": 17,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-l-26",
+        "kr-mpm-2024-03-02-psat-l-27",
+        "kr-mpm-2024-03-02-psat-l-28",
+        "kr-mpm-2024-03-02-psat-l-29",
+        "kr-mpm-2024-03-02-psat-l-30",
+        "kr-mpm-2024-03-02-psat-l-31",
+        "kr-mpm-2024-03-02-psat-l-32",
+        "kr-mpm-2024-03-02-psat-l-33",
+        "kr-mpm-2024-03-02-psat-l-34",
+        "kr-mpm-2024-03-02-psat-l-35"
+      ]
+    },
+    {
+      "id": "psat-situation-026",
+      "subject": "상황판단",
+      "order": 18,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-s-22",
+        "kr-mpm-2024-03-02-psat-s-23",
+        "kr-mpm-2024-03-02-psat-s-24",
+        "kr-mpm-2024-03-02-psat-s-25",
+        "kr-mpm-2024-03-02-psat-s-26",
+        "kr-mpm-2024-03-02-psat-s-27",
+        "kr-mpm-2024-03-02-psat-s-28",
+        "kr-mpm-2024-03-02-psat-s-29",
+        "kr-mpm-2024-03-02-psat-s-30",
+        "kr-mpm-2024-03-02-psat-s-31"
+      ]
+    },
+    {
+      "id": "psat-data-026",
+      "subject": "자료해석",
+      "order": 28,
+      "difficulty": "심화",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-d-24",
+        "kr-mpm-2024-03-02-psat-d-25",
+        "kr-mpm-2024-03-02-psat-d-26",
+        "kr-mpm-2024-03-02-psat-d-27",
+        "kr-mpm-2024-03-02-psat-d-29",
+        "kr-mpm-2024-03-02-psat-d-30",
+        "kr-mpm-2024-03-02-psat-d-31",
+        "kr-mpm-2024-03-02-psat-d-32",
+        "kr-mpm-2024-03-02-psat-d-33",
+        "kr-mpm-2024-03-02-psat-d-34"
+      ]
+    },
+    {
+      "id": "psat-verbal-027",
+      "subject": "언어논리",
+      "order": 18,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-l-36",
+        "kr-mpm-2024-03-02-psat-l-37",
+        "kr-mpm-2024-03-02-psat-l-38",
+        "kr-mpm-2024-03-02-psat-l-39",
+        "kr-mpm-2024-03-02-psat-l-40",
+        "kr-mpm-2023-03-04-psat-l-01",
+        "kr-mpm-2023-03-04-psat-l-02",
+        "kr-mpm-2023-03-04-psat-l-03",
+        "kr-mpm-2023-03-04-psat-l-04",
+        "kr-mpm-2023-03-04-psat-l-05"
+      ]
+    },
+    {
+      "id": "psat-situation-027",
+      "subject": "상황판단",
+      "order": 19,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-s-32",
+        "kr-mpm-2024-03-02-psat-s-33",
+        "kr-mpm-2024-03-02-psat-s-34",
+        "kr-mpm-2024-03-02-psat-s-35",
+        "kr-mpm-2024-03-02-psat-s-36",
+        "kr-mpm-2024-03-02-psat-s-37",
+        "kr-mpm-2024-03-02-psat-s-38",
+        "kr-mpm-2024-03-02-psat-s-39",
+        "kr-mpm-2024-03-02-psat-s-40",
+        "kr-mpm-2023-03-04-psat-s-01"
+      ]
+    },
+    {
+      "id": "psat-data-027",
+      "subject": "자료해석",
+      "order": 18,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2024-03-02-psat-d-35",
+        "kr-mpm-2024-03-02-psat-d-37",
+        "kr-mpm-2024-03-02-psat-d-38",
+        "kr-mpm-2024-03-02-psat-d-39",
+        "kr-mpm-2024-03-02-psat-d-40",
+        "kr-mpm-2023-03-04-psat-d-01",
+        "kr-mpm-2023-03-04-psat-d-02",
+        "kr-mpm-2023-03-04-psat-d-03",
+        "kr-mpm-2023-03-04-psat-d-04",
+        "kr-mpm-2023-03-04-psat-d-05"
+      ]
+    },
+    {
+      "id": "psat-verbal-028",
+      "subject": "언어논리",
+      "order": 19,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-l-06",
+        "kr-mpm-2023-03-04-psat-l-07",
+        "kr-mpm-2023-03-04-psat-l-08",
+        "kr-mpm-2023-03-04-psat-l-09",
+        "kr-mpm-2023-03-04-psat-l-10",
+        "kr-mpm-2023-03-04-psat-l-11",
+        "kr-mpm-2023-03-04-psat-l-12",
+        "kr-mpm-2023-03-04-psat-l-13",
+        "kr-mpm-2023-03-04-psat-l-14",
+        "kr-mpm-2023-03-04-psat-l-15"
+      ]
+    },
+    {
+      "id": "psat-situation-028",
+      "subject": "상황판단",
+      "order": 20,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-s-02",
+        "kr-mpm-2023-03-04-psat-s-03",
+        "kr-mpm-2023-03-04-psat-s-04",
+        "kr-mpm-2023-03-04-psat-s-05",
+        "kr-mpm-2023-03-04-psat-s-06",
+        "kr-mpm-2023-03-04-psat-s-07",
+        "kr-mpm-2023-03-04-psat-s-08",
+        "kr-mpm-2023-03-04-psat-s-09",
+        "kr-mpm-2023-03-04-psat-s-10",
+        "kr-mpm-2023-03-04-psat-s-11"
+      ]
+    },
+    {
+      "id": "psat-data-028",
+      "subject": "자료해석",
+      "order": 19,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-d-06",
+        "kr-mpm-2023-03-04-psat-d-07",
+        "kr-mpm-2023-03-04-psat-d-08",
+        "kr-mpm-2023-03-04-psat-d-09",
+        "kr-mpm-2023-03-04-psat-d-10",
+        "kr-mpm-2023-03-04-psat-d-11",
+        "kr-mpm-2023-03-04-psat-d-12",
+        "kr-mpm-2023-03-04-psat-d-13",
+        "kr-mpm-2023-03-04-psat-d-15",
+        "kr-mpm-2023-03-04-psat-d-16"
+      ]
+    },
+    {
+      "id": "psat-verbal-029",
+      "subject": "언어논리",
+      "order": 20,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-l-16",
+        "kr-mpm-2023-03-04-psat-l-17",
+        "kr-mpm-2023-03-04-psat-l-18",
+        "kr-mpm-2023-03-04-psat-l-19",
+        "kr-mpm-2023-03-04-psat-l-20",
+        "kr-mpm-2023-03-04-psat-l-21",
+        "kr-mpm-2023-03-04-psat-l-22",
+        "kr-mpm-2023-03-04-psat-l-23",
+        "kr-mpm-2023-03-04-psat-l-24",
+        "kr-mpm-2023-03-04-psat-l-25"
+      ]
+    },
+    {
+      "id": "psat-situation-029",
+      "subject": "상황판단",
+      "order": 21,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-s-12",
+        "kr-mpm-2023-03-04-psat-s-13",
+        "kr-mpm-2023-03-04-psat-s-14",
+        "kr-mpm-2023-03-04-psat-s-15",
+        "kr-mpm-2023-03-04-psat-s-16",
+        "kr-mpm-2023-03-04-psat-s-17",
+        "kr-mpm-2023-03-04-psat-s-18",
+        "kr-mpm-2023-03-04-psat-s-20",
+        "kr-mpm-2023-03-04-psat-s-21",
+        "kr-mpm-2023-03-04-psat-s-22"
+      ]
+    },
+    {
+      "id": "psat-data-029",
+      "subject": "자료해석",
+      "order": 20,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-d-17",
+        "kr-mpm-2023-03-04-psat-d-18",
+        "kr-mpm-2023-03-04-psat-d-19",
+        "kr-mpm-2023-03-04-psat-d-20",
+        "kr-mpm-2023-03-04-psat-d-21",
+        "kr-mpm-2023-03-04-psat-d-22",
+        "kr-mpm-2023-03-04-psat-d-23",
+        "kr-mpm-2023-03-04-psat-d-24",
+        "kr-mpm-2023-03-04-psat-d-25",
+        "kr-mpm-2023-03-04-psat-d-26"
+      ]
+    },
+    {
+      "id": "psat-verbal-030",
+      "subject": "언어논리",
+      "order": 21,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-l-26",
+        "kr-mpm-2023-03-04-psat-l-27",
+        "kr-mpm-2023-03-04-psat-l-28",
+        "kr-mpm-2023-03-04-psat-l-29",
+        "kr-mpm-2023-03-04-psat-l-30",
+        "kr-mpm-2023-03-04-psat-l-31",
+        "kr-mpm-2023-03-04-psat-l-32",
+        "kr-mpm-2023-03-04-psat-l-33",
+        "kr-mpm-2023-03-04-psat-l-34",
+        "kr-mpm-2023-03-04-psat-l-35"
+      ]
+    },
+    {
+      "id": "psat-situation-030",
+      "subject": "상황판단",
+      "order": 22,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-s-23",
+        "kr-mpm-2023-03-04-psat-s-24",
+        "kr-mpm-2023-03-04-psat-s-25",
+        "kr-mpm-2023-03-04-psat-s-26",
+        "kr-mpm-2023-03-04-psat-s-27",
+        "kr-mpm-2023-03-04-psat-s-28",
+        "kr-mpm-2023-03-04-psat-s-29",
+        "kr-mpm-2023-03-04-psat-s-30",
+        "kr-mpm-2023-03-04-psat-s-31",
+        "kr-mpm-2023-03-04-psat-s-32"
+      ]
+    },
+    {
+      "id": "psat-data-030",
+      "subject": "자료해석",
+      "order": 21,
+      "difficulty": "혼합",
+      "questionIds": [
+        "kr-mpm-2023-03-04-psat-d-27",
+        "kr-mpm-2023-03-04-psat-d-28",
+        "kr-mpm-2023-03-04-psat-d-29",
+        "kr-mpm-2023-03-04-psat-d-30",
+        "kr-mpm-2023-03-04-psat-d-31",
+        "kr-mpm-2023-03-04-psat-d-32",
+        "kr-mpm-2023-03-04-psat-d-33",
+        "kr-mpm-2023-03-04-psat-d-34",
+        "kr-mpm-2023-03-04-psat-d-35",
+        "kr-mpm-2023-03-04-psat-d-36"
+      ]
+    }
+  ]
+}

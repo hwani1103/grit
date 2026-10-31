@@ -1,0 +1,632 @@
+[
+  {
+    "id": "psat-verbal-002",
+    "subject": "언어논리",
+    "oldOrder": 2,
+    "newOrder": 1,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-verbal-005",
+    "subject": "언어논리",
+    "oldOrder": 5,
+    "newOrder": 2,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-verbal-006",
+    "subject": "언어논리",
+    "oldOrder": 6,
+    "newOrder": 3,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-verbal-018",
+    "subject": "언어논리",
+    "oldOrder": 18,
+    "newOrder": 4,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-verbal-001",
+    "subject": "언어논리",
+    "oldOrder": 1,
+    "newOrder": 5,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-007",
+    "subject": "언어논리",
+    "oldOrder": 7,
+    "newOrder": 6,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-008",
+    "subject": "언어논리",
+    "oldOrder": 8,
+    "newOrder": 7,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-009",
+    "subject": "언어논리",
+    "oldOrder": 9,
+    "newOrder": 8,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-010",
+    "subject": "언어논리",
+    "oldOrder": 10,
+    "newOrder": 9,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-011",
+    "subject": "언어논리",
+    "oldOrder": 11,
+    "newOrder": 10,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-012",
+    "subject": "언어논리",
+    "oldOrder": 12,
+    "newOrder": 11,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-013",
+    "subject": "언어논리",
+    "oldOrder": 13,
+    "newOrder": 12,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-014",
+    "subject": "언어논리",
+    "oldOrder": 14,
+    "newOrder": 13,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-015",
+    "subject": "언어논리",
+    "oldOrder": 15,
+    "newOrder": 14,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-024",
+    "subject": "언어논리",
+    "oldOrder": 24,
+    "newOrder": 15,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-025",
+    "subject": "언어논리",
+    "oldOrder": 25,
+    "newOrder": 16,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-026",
+    "subject": "언어논리",
+    "oldOrder": 26,
+    "newOrder": 17,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-027",
+    "subject": "언어논리",
+    "oldOrder": 27,
+    "newOrder": 18,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-028",
+    "subject": "언어논리",
+    "oldOrder": 28,
+    "newOrder": 19,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-029",
+    "subject": "언어논리",
+    "oldOrder": 29,
+    "newOrder": 20,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-030",
+    "subject": "언어논리",
+    "oldOrder": 30,
+    "newOrder": 21,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-verbal-003",
+    "subject": "언어논리",
+    "oldOrder": 3,
+    "newOrder": 22,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-004",
+    "subject": "언어논리",
+    "oldOrder": 4,
+    "newOrder": 23,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-016",
+    "subject": "언어논리",
+    "oldOrder": 16,
+    "newOrder": 24,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-017",
+    "subject": "언어논리",
+    "oldOrder": 17,
+    "newOrder": 25,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-019",
+    "subject": "언어논리",
+    "oldOrder": 19,
+    "newOrder": 26,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-020",
+    "subject": "언어논리",
+    "oldOrder": 20,
+    "newOrder": 27,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-021",
+    "subject": "언어논리",
+    "oldOrder": 21,
+    "newOrder": 28,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-022",
+    "subject": "언어논리",
+    "oldOrder": 22,
+    "newOrder": 29,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-verbal-023",
+    "subject": "언어논리",
+    "oldOrder": 23,
+    "newOrder": 30,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-002",
+    "subject": "상황판단",
+    "oldOrder": 2,
+    "newOrder": 1,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-situation-006",
+    "subject": "상황판단",
+    "oldOrder": 6,
+    "newOrder": 2,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-situation-018",
+    "subject": "상황판단",
+    "oldOrder": 18,
+    "newOrder": 3,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-situation-001",
+    "subject": "상황판단",
+    "oldOrder": 1,
+    "newOrder": 4,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-005",
+    "subject": "상황판단",
+    "oldOrder": 5,
+    "newOrder": 5,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-007",
+    "subject": "상황판단",
+    "oldOrder": 7,
+    "newOrder": 6,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-008",
+    "subject": "상황판단",
+    "oldOrder": 8,
+    "newOrder": 7,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-009",
+    "subject": "상황판단",
+    "oldOrder": 9,
+    "newOrder": 8,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-010",
+    "subject": "상황판단",
+    "oldOrder": 10,
+    "newOrder": 9,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-011",
+    "subject": "상황판단",
+    "oldOrder": 11,
+    "newOrder": 10,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-012",
+    "subject": "상황판단",
+    "oldOrder": 12,
+    "newOrder": 11,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-013",
+    "subject": "상황판단",
+    "oldOrder": 13,
+    "newOrder": 12,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-014",
+    "subject": "상황판단",
+    "oldOrder": 14,
+    "newOrder": 13,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-015",
+    "subject": "상황판단",
+    "oldOrder": 15,
+    "newOrder": 14,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-017",
+    "subject": "상황판단",
+    "oldOrder": 17,
+    "newOrder": 15,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-024",
+    "subject": "상황판단",
+    "oldOrder": 24,
+    "newOrder": 16,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-025",
+    "subject": "상황판단",
+    "oldOrder": 25,
+    "newOrder": 17,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-026",
+    "subject": "상황판단",
+    "oldOrder": 26,
+    "newOrder": 18,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-027",
+    "subject": "상황판단",
+    "oldOrder": 27,
+    "newOrder": 19,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-028",
+    "subject": "상황판단",
+    "oldOrder": 28,
+    "newOrder": 20,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-029",
+    "subject": "상황판단",
+    "oldOrder": 29,
+    "newOrder": 21,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-030",
+    "subject": "상황판단",
+    "oldOrder": 30,
+    "newOrder": 22,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-situation-003",
+    "subject": "상황판단",
+    "oldOrder": 3,
+    "newOrder": 23,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-004",
+    "subject": "상황판단",
+    "oldOrder": 4,
+    "newOrder": 24,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-016",
+    "subject": "상황판단",
+    "oldOrder": 16,
+    "newOrder": 25,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-019",
+    "subject": "상황판단",
+    "oldOrder": 19,
+    "newOrder": 26,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-020",
+    "subject": "상황판단",
+    "oldOrder": 20,
+    "newOrder": 27,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-021",
+    "subject": "상황판단",
+    "oldOrder": 21,
+    "newOrder": 28,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-022",
+    "subject": "상황판단",
+    "oldOrder": 22,
+    "newOrder": 29,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-situation-023",
+    "subject": "상황판단",
+    "oldOrder": 23,
+    "newOrder": 30,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-002",
+    "subject": "자료해석",
+    "oldOrder": 2,
+    "newOrder": 1,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-data-006",
+    "subject": "자료해석",
+    "oldOrder": 6,
+    "newOrder": 2,
+    "difficulty": "기본"
+  },
+  {
+    "id": "psat-data-001",
+    "subject": "자료해석",
+    "oldOrder": 1,
+    "newOrder": 3,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-005",
+    "subject": "자료해석",
+    "oldOrder": 5,
+    "newOrder": 4,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-007",
+    "subject": "자료해석",
+    "oldOrder": 7,
+    "newOrder": 5,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-008",
+    "subject": "자료해석",
+    "oldOrder": 8,
+    "newOrder": 6,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-009",
+    "subject": "자료해석",
+    "oldOrder": 9,
+    "newOrder": 7,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-010",
+    "subject": "자료해석",
+    "oldOrder": 10,
+    "newOrder": 8,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-011",
+    "subject": "자료해석",
+    "oldOrder": 11,
+    "newOrder": 9,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-012",
+    "subject": "자료해석",
+    "oldOrder": 12,
+    "newOrder": 10,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-013",
+    "subject": "자료해석",
+    "oldOrder": 13,
+    "newOrder": 11,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-014",
+    "subject": "자료해석",
+    "oldOrder": 14,
+    "newOrder": 12,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-015",
+    "subject": "자료해석",
+    "oldOrder": 15,
+    "newOrder": 13,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-016",
+    "subject": "자료해석",
+    "oldOrder": 16,
+    "newOrder": 14,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-017",
+    "subject": "자료해석",
+    "oldOrder": 17,
+    "newOrder": 15,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-024",
+    "subject": "자료해석",
+    "oldOrder": 24,
+    "newOrder": 16,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-025",
+    "subject": "자료해석",
+    "oldOrder": 25,
+    "newOrder": 17,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-027",
+    "subject": "자료해석",
+    "oldOrder": 27,
+    "newOrder": 18,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-028",
+    "subject": "자료해석",
+    "oldOrder": 28,
+    "newOrder": 19,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-029",
+    "subject": "자료해석",
+    "oldOrder": 29,
+    "newOrder": 20,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-030",
+    "subject": "자료해석",
+    "oldOrder": 30,
+    "newOrder": 21,
+    "difficulty": "혼합"
+  },
+  {
+    "id": "psat-data-003",
+    "subject": "자료해석",
+    "oldOrder": 3,
+    "newOrder": 22,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-004",
+    "subject": "자료해석",
+    "oldOrder": 4,
+    "newOrder": 23,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-018",
+    "subject": "자료해석",
+    "oldOrder": 18,
+    "newOrder": 24,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-020",
+    "subject": "자료해석",
+    "oldOrder": 20,
+    "newOrder": 25,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-021",
+    "subject": "자료해석",
+    "oldOrder": 21,
+    "newOrder": 26,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-022",
+    "subject": "자료해석",
+    "oldOrder": 22,
+    "newOrder": 27,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-026",
+    "subject": "자료해석",
+    "oldOrder": 26,
+    "newOrder": 28,
+    "difficulty": "심화"
+  },
+  {
+    "id": "psat-data-019",
+    "subject": "자료해석",
+    "oldOrder": 19,
+    "newOrder": 29,
+    "difficulty": "고난도"
+  },
+  {
+    "id": "psat-data-023",
+    "subject": "자료해석",
+    "oldOrder": 23,
+    "newOrder": 30,
+    "difficulty": "고난도"
+  }
+]

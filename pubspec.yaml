@@ -1,7 +1,7 @@
 name: grit
 description: Daily quantitative reasoning practice with generated problems and local history.
 publish_to: 'none'
-version: 1.1.0+2
+version: 1.3.2+5002
 environment:
   sdk: ^3.11.5
 dependencies:
@@ -13,3 +13,96 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 flutter:
   uses-material-design: true
+  assets:
+    - assets/psat/batch01.json
+    - assets/psat/data01.json
+    - assets/psat/verbal02.json
+    - assets/psat/situation02.json
+    - assets/psat/data02.json
+    - assets/psat/verbal03.json
+    - assets/psat/situation03.json
+    - assets/psat/data03.json
+    - assets/psat/verbal04.json
+    - assets/psat/situation04.json
+    - assets/psat/data04.json
+    - assets/psat/verbal05.json
+    - assets/psat/situation05.json
+    - assets/psat/data05.json
+    - assets/psat/verbal06.json
+    - assets/psat/situation06.json
+    - assets/psat/data06.json
+    - assets/psat/verbal07.json
+    - assets/psat/situation07.json
+    - assets/psat/data07.json
+    - assets/psat/verbal08.json
+    - assets/psat/situation08.json
+    - assets/psat/data08.json
+    - assets/psat/verbal09.json
+    - assets/psat/situation09.json
+    - assets/psat/data09.json
+    - assets/psat/verbal10.json
+    - assets/psat/situation10.json
+    - assets/psat/data10.json
+    - assets/psat/verbal11.json
+    - assets/psat/situation11.json
+    - assets/psat/data11.json
+    - assets/psat/verbal12.json
+    - assets/psat/situation12.json
+    - assets/psat/data12.json
+    - assets/psat/verbal13.json
+    - assets/psat/situation13.json
+    - assets/psat/data13.json
+    - assets/psat/verbal14.json
+    - assets/psat/situation14.json
+    - assets/psat/data14.json
+    - assets/psat/verbal15.json
+    - assets/psat/situation15.json
+    - assets/psat/data15.json
+    - assets/psat/verbal16.json
+    - assets/psat/situation16.json
+    - assets/psat/data16.json
+    - assets/psat/verbal17.json
+    - assets/psat/situation17.json
+    - assets/psat/data17.json
+    - assets/psat/verbal18.json
+    - assets/psat/situation18.json
+    - assets/psat/data18.json
+    - assets/psat/verbal19.json
+    - assets/psat/situation19.json
+    - assets/psat/data19.json
+    - assets/psat/verbal20.json
+    - assets/psat/verbal21.json
+    - assets/psat/verbal22.json
+    - assets/psat/verbal23.json
+    - assets/psat/verbal24.json
+    - assets/psat/verbal25.json
+    - assets/psat/verbal26.json
+    - assets/psat/verbal27.json
+    - assets/psat/verbal28.json
+    - assets/psat/verbal29.json
+    - assets/psat/situation20.json
+    - assets/psat/situation21.json
+    - assets/psat/situation22.json
+    - assets/psat/situation23.json
+    - assets/psat/situation24.json
+    - assets/psat/situation25.json
+    - assets/psat/situation26.json
+    - assets/psat/situation27.json
+    - assets/psat/situation28.json
+    - assets/psat/situation29.json
+    - assets/psat/data20.json
+    - assets/psat/data21.json
+    - assets/psat/data22.json
+    - assets/psat/data23.json
+    - assets/psat/data24.json
+    - assets/psat/data25.json
+    - assets/psat/data26.json
+    - assets/psat/data27.json
+    - assets/psat/data28.json
+    - assets/psat/data29.json
+    - assets/psat/data30.json
+    - assets/psat/verbal30.json
+    - assets/psat/situation30.json
+    - assets/psat/sets.json
+    - assets/psat/figures/
+    - assets/psat/originals/

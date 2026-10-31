@@ -1,0 +1,242 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-31T04:09:18.689864+09:00",
+  "initialFullLog": "full-tests.log",
+  "initialFailures": 45,
+  "allInitialFailuresMappedToSuccessfulRetests": true,
+  "retestedOrdinaryCount": 46,
+  "retestedWidgetCount": 4,
+  "resolved": [
+    {
+      "file": "test/psat_data02_test.dart",
+      "originalTitle": "2024 data Set2 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2024 data Set2 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data03_test.dart",
+      "originalTitle": "2024 data Set3 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2024 data Set3 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data04_test.dart",
+      "originalTitle": "mixed-year data Set4 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-year data Set4 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data05_test.dart",
+      "originalTitle": "2023 data Set5 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2023 data Set5 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data06_test.dart",
+      "originalTitle": "2025 data Set6 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2025 data Set6 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data07_test.dart",
+      "originalTitle": "2025 data Set7 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2025 data Set7 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data08_test.dart",
+      "originalTitle": "2025/2021 data Set8 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2025/2021 data Set8 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data09_test.dart",
+      "originalTitle": "2021 data Set9 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2021 data Set9 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data10_test.dart",
+      "originalTitle": "2021 data Set10 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2021 data Set10 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data11_test.dart",
+      "originalTitle": "2025special data Set11 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2025special data Set11 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data12_test.dart",
+      "originalTitle": "2025special data Set12 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "2025special data Set12 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data13_test.dart",
+      "originalTitle": "mixed-date data Set13 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-date data Set13 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data14_test.dart",
+      "originalTitle": "mixed-date data Set14 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-date data Set14 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data15_test.dart",
+      "originalTitle": "mixed-date data Set15 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-date data Set15 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data16_test.dart",
+      "originalTitle": "mixed-date data Set16 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-date data Set16 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data17_test.dart",
+      "originalTitle": "mixed-date data Set17 matches keys and preserves complete graphics in snapshots",
+      "retestedTitle": "mixed-date data Set17 matches keys and preserves complete graphics in snapshots"
+    },
+    {
+      "file": "test/psat_data18_test.dart",
+      "originalTitle": "data Set18 official keys, full graphics and exact rounding boundaries",
+      "retestedTitle": "data Set18 official keys, full graphics and exact rounding boundaries"
+    },
+    {
+      "file": "test/psat_data19_test.dart",
+      "originalTitle": "data Set19 exact source keys, shared figures and lower-bound explanations",
+      "retestedTitle": "data Set19 exact source keys, shared figures and lower-bound explanations"
+    },
+    {
+      "file": "test/psat_data20_test.dart",
+      "originalTitle": "data Set20 official keys, cross-column materials and exact thresholds",
+      "retestedTitle": "data Set20 official keys, cross-column materials and exact thresholds"
+    },
+    {
+      "file": "test/psat_data21_test.dart",
+      "originalTitle": "data Set21 retains shared tables and all five graph choices",
+      "retestedTitle": "data Set21 retains shared tables and all five graph choices"
+    },
+    {
+      "file": "test/psat_data22_test.dart",
+      "originalTitle": "data Set22 retains cross-column graphs and both common-table copies",
+      "retestedTitle": "data Set22 retains cross-column graphs and both common-table copies"
+    },
+    {
+      "file": "test/psat_data23_test.dart",
+      "originalTitle": "data Set23 keeps source graphics and excludes held candidates",
+      "retestedTitle": "data Set23 keeps source graphics and excludes held candidates"
+    },
+    {
+      "file": "test/psat_data24_test.dart",
+      "originalTitle": "data Set24 keeps graphs, report underlines and exact stopping rules",
+      "retestedTitle": "data Set24 keeps graphs, report underlines and exact stopping rules"
+    },
+    {
+      "file": "test/psat_data25_test.dart",
+      "originalTitle": "data Set25 retains map legends, common report and paired headers",
+      "retestedTitle": "data Set25 retains map legends, common report and paired headers"
+    },
+    {
+      "file": "test/psat_data27_test.dart",
+      "originalTitle": "data Set27 retains bounds notes and source report graphics",
+      "retestedTitle": "data Set27 retains bounds notes and source report graphics"
+    },
+    {
+      "file": "test/psat_remaining605_renderer_regression_test.dart",
+      "originalTitle": "quoted anchor fix preserves all other catalog body spans",
+      "retestedTitle": "quoted anchor fix preserves all other catalog body spans"
+    },
+    {
+      "file": "test/psat_remaining605_underlines_test.dart",
+      "originalTitle": "2024 common passage underlines exclude the four circled source labels",
+      "retestedTitle": "2024 common passage underlines exclude the four circled source labels"
+    },
+    {
+      "file": "test/psat_situation04_test.dart",
+      "originalTitle": "situation Set4 preserves mixed years, seven tables, four figures and keys",
+      "retestedTitle": "situation Set4 preserves mixed years, nine native tables and prose and keys"
+    },
+    {
+      "file": "test/psat_situation10_test.dart",
+      "originalTitle": "situation Set10 preserves blank, Greek symbols, choice columns and underlines",
+      "retestedTitle": "situation Set10 preserves blank, Greek symbols, choice columns and underlines"
+    },
+    {
+      "file": "test/psat_situation10_test.dart",
+      "originalTitle": "situation Set10 special text fits cover and opened fold",
+      "retestedTitle": "situation Set10 special text fits cover and opened fold"
+    },
+    {
+      "file": "test/psat_situation21_test.dart",
+      "originalTitle": "situation Set21 source bodies, law hierarchy and choice columns survive loading",
+      "retestedTitle": "situation Set21 source bodies, law hierarchy and choice columns survive loading"
+    },
+    {
+      "file": "test/psat_situation22_test.dart",
+      "originalTitle": "situation Set22 keeps legal hierarchy, blank labels and source fraction",
+      "retestedTitle": "situation Set22 keeps legal hierarchy, blank labels and source fraction"
+    },
+    {
+      "file": "test/psat_situation23_test.dart",
+      "originalTitle": "situation Set23 keeps original tables, shared passage and law scope",
+      "retestedTitle": "situation Set23 keeps original tables, shared passage and law scope"
+    },
+    {
+      "file": "test/psat_situation26_test.dart",
+      "originalTitle": "situation Set26 keeps legal hierarchy, formulas and original figures",
+      "retestedTitle": "situation Set26 keeps legal hierarchy, formulas and original figures"
+    },
+    {
+      "file": "test/psat_situation27_test.dart",
+      "originalTitle": "situation Set27 retains windows, evaluation notes and legal exceptions",
+      "retestedTitle": "situation Set27 retains windows, evaluation notes and legal exceptions"
+    },
+    {
+      "file": "test/psat_situation30_test.dart",
+      "originalTitle": "situation Set30 keeps legal dates formula and linked table conditions",
+      "retestedTitle": "situation Set30 keeps legal dates formula and linked table conditions"
+    },
+    {
+      "file": "test/psat_verbal10_test.dart",
+      "originalTitle": "verbal Set10 preserves blank, Greek symbols, choice columns and underlines",
+      "retestedTitle": "verbal Set10 preserves blank, Greek symbols, choice columns and underlines"
+    },
+    {
+      "file": "test/psat_verbal11_test.dart",
+      "originalTitle": "verbal Set11 special text fits cover and opened fold",
+      "retestedTitle": "verbal Set11 special text fits cover and opened fold"
+    },
+    {
+      "file": "test/psat_verbal13_test.dart",
+      "originalTitle": "verbal Set13 preserves mixed exam dates, electoral table, underlines and book titles",
+      "retestedTitle": "verbal Set13 preserves mixed exam dates, electoral table, underlines and book titles"
+    },
+    {
+      "file": "test/psat_verbal14_test.dart",
+      "originalTitle": "verbal Set14 preserves eligibility table, underlines, book titles and ordered blanks",
+      "retestedTitle": "verbal Set14 preserves eligibility table, underlines, book titles and ordered blanks"
+    },
+    {
+      "file": "test/psat_verbal15_test.dart",
+      "originalTitle": "verbal Set15 preserves shared passage, Greek symbols, flow tables and grade5 quantified logic",
+      "retestedTitle": "verbal Set15 preserves shared passage, Greek symbols, flow tables and grade5 quantified logic"
+    },
+    {
+      "file": "test/psat_verbal16_test.dart",
+      "originalTitle": "verbal Set16 preserves shared dialogue, blanks, underline and subscript semantics",
+      "retestedTitle": "verbal Set16 preserves shared dialogue, blanks, underline and subscript semantics"
+    },
+    {
+      "file": "test/psat_verbal19_test.dart",
+      "originalTitle": "verbal Set19 special text fits cover and opened fold",
+      "retestedTitle": "verbal Set19 special text fits cover and opened fold"
+    },
+    {
+      "file": "test/psat_verbal20_test.dart",
+      "originalTitle": "verbal Set20 keys, five source underlines, three blanks and snapshots",
+      "retestedTitle": "verbal Set20 keys, five source underlines, three blanks and snapshots"
+    },
+    {
+      "file": "test/psat_verbal22_test.dart",
+      "originalTitle": "verbal Set22 preserves blanks, choice pairs and marked term",
+      "retestedTitle": "verbal Set22 preserves blanks, choice pairs and marked term"
+    }
+  ],
+  "ordinaryLog": "unit-final.log",
+  "widgetLog": "widget-final.log",
+  "recoveryLogIndex": "recovery-runs.json",
+  "recoveryCoverage": "recovery-coverage.json",
+  "initialRunInterrupted": true,
+  "method": "Initial suite interrupted after182passes and45 stale-expectation failures by host runtime failure. All three active files recovered with fresh processes per100 IDs and full900 coverage proven per category, except two heavy PsatReader cases already passed; all45 failures mapped to successful reruns. Not a second full-suite run."
+}

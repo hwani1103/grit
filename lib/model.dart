@@ -99,6 +99,10 @@ class PracticeSession {
   final DateTime startedAt;
   DateTime? completedAt;
   int? elapsedSeconds;
+  // Unfinished sessions live only in memory. Keep subsecond background time
+  // here so repeated app switches do not add rounding errors to saved results.
+  Duration _backgroundTime = Duration.zero;
+  DateTime? _backgroundSince;
   final Map<String, String> answers;
   final Map<String, String> memos;
   int page;
@@ -146,8 +150,25 @@ class PracticeSession {
   }
 
   int get answered => expected.keys.where(hasAnswer).length;
-  int elapsedAt(DateTime now) =>
-      elapsedSeconds ?? max(0, now.difference(startedAt).inSeconds);
+  bool get isTimingPaused => _backgroundSince != null;
+  void pauseTiming(DateTime now) {
+    if (completedAt == null) _backgroundSince ??= now;
+  }
+
+  void resumeTiming(DateTime now) {
+    final since = _backgroundSince;
+    if (since == null) return;
+    if (now.isAfter(since)) _backgroundTime += now.difference(since);
+    _backgroundSince = null;
+  }
+
+  int elapsedAt(DateTime now) {
+    if (elapsedSeconds != null) return elapsedSeconds!;
+    final since = _backgroundSince;
+    final end = since != null && since.isBefore(now) ? since : now;
+    return max(0, (end.difference(startedAt) - _backgroundTime).inSeconds);
+  }
+
   Map<String, dynamic> toJson() => {
     'id': id,
     'kind': kind.name,

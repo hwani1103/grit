@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "uniqueChecksWithSuccessfulRun": 44,
+  "firstRun": {
+    "passed": 43,
+    "failed": 1,
+    "failure": "new screenshot helper did not yield to asynchronous catalog loading"
+  },
+  "finalAuditRerun": {
+    "passed": 4,
+    "failed": 0,
+    "log": "audit-final.log"
+  },
+  "textCallSites": 227,
+  "textAlternatives": 437,
+  "textConditions": 4767,
+  "screenFamilies": 23,
+  "screenCaptures": 92,
+  "staticAnalysis": "No issues found!",
+  "deviceVerificationOfChanges": false,
+  "build": false,
+  "installation": false,
+  "contentPreserved": true,
+  "phoneticFont": "host Malgun, not Samsung phone font"
+}

@@ -8,12 +8,10 @@ import 'store_test.dart' show MemoryPersistence;
 
 void main() {
   testWidgets(
-    'settings opens offline guide, search finds method, reader changes lesson',
+    'vitamin opens offline guide, search finds method, reader changes lesson',
     (tester) async {
       final c = AppController(MemoryPersistence());
       await tester.pumpWidget(GritApp(controller: c));
-      await tester.pumpAndSettle();
-      await tester.tap(find.byTooltip('설정 및 기록 관리'));
       await tester.pumpAndSettle();
       await tester.tap(find.text('풀이 안내서'));
       await tester.pumpAndSettle();

@@ -1,3 +1,4 @@
+import 'word_text.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'main.dart';
@@ -78,15 +79,6 @@ class _AdditionExerciseState extends State<AdditionExercise> {
     setState(() {});
   }
 
-  void move(int direction) {
-    if (selectedMemo != null) {
-      choose(selected);
-      return;
-    }
-    final next = p.hidden.indexOf(selected) + direction;
-    choose(p.hidden[next.clamp(0, p.hidden.length - 1)]);
-  }
-
   @override
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, constraints) {
@@ -98,12 +90,12 @@ class _AdditionExerciseState extends State<AdditionExercise> {
       final sideBySide =
           width >= 640 || (width >= 560 && width > height * 1.25);
       if (sideBySide) {
-        final padWidth = (width * .32).clamp(220.0, 280.0);
+        final padWidth = (width * .34).clamp(232.0, 300.0);
         final navHeight = height < 360 ? 44.0 : 50.0;
         final showPreview = height >= 480;
         final inputHeight = min(
           height,
-          300.0 + navHeight + 12 + (showPreview ? 76 : 0),
+          320.0 + navHeight + 12 + (showPreview ? 76 : 0),
         );
         final tableWidth = width - padWidth - gap;
         final tableHeight = min(
@@ -141,12 +133,12 @@ class _AdditionExerciseState extends State<AdditionExercise> {
                       color: selectedMemo == null ? Colors.white : memoSurface,
                       child: Row(
                         children: [
-                          Text(
+                          WordText(
                             selectedMemo == null ? '선택한 답안' : '계산 메모',
                             style: const TextStyle(fontSize: 11, color: muted),
                           ),
                           const Spacer(),
-                          Text(
+                          WordText(
                             answer.isEmpty ? '—' : answer,
                             key: const ValueKey('wide-input-preview'),
                             style: numeric.copyWith(
@@ -169,7 +161,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
         );
       }
       final navHeight = height < 520 ? 44.0 : 48.0;
-      final padHeight = height < 520 ? 180.0 : 206.0;
+      final padHeight = height < 520 ? 200.0 : 236.0;
       const labelHeight = 26.0;
       final gridHeight = max(
         0.0,
@@ -216,7 +208,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
             child: FittedBox(
               fit: BoxFit.scaleDown,
               alignment: Alignment.centerLeft,
-              child: Text(
+              child: WordText(
                 caption,
                 style: const TextStyle(
                   fontSize: 12,
@@ -226,7 +218,10 @@ class _AdditionExerciseState extends State<AdditionExercise> {
             ),
           ),
           const SizedBox(width: 8),
-          const Text('파란 칸은 메모', style: TextStyle(fontSize: 10, color: muted)),
+          const WordText(
+            '파란 칸은 메모',
+            style: TextStyle(fontSize: 10, color: muted),
+          ),
         ],
       ),
     );
@@ -268,7 +263,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
                     child: const Center(
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
-                        child: Text(
+                        child: WordText(
                           '메모',
                           style: TextStyle(fontSize: 10, color: memoInk),
                         ),
@@ -324,7 +319,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
               ? const Icon(Icons.edit_outlined, size: 13, color: memoInk)
               : FittedBox(
                   fit: BoxFit.scaleDown,
-                  child: Text(
+                  child: WordText(
                     value,
                     style: numeric.copyWith(fontSize: font, color: memoInk),
                   ),
@@ -379,7 +374,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
       ),
       child: FittedBox(
         fit: BoxFit.scaleDown,
-        child: Text(
+        child: WordText(
           value.isEmpty ? '·' : value,
           style: numeric.copyWith(
             fontSize: font,
@@ -407,55 +402,51 @@ class _AdditionExerciseState extends State<AdditionExercise> {
 
   Widget keypad() => Column(
     children: [
-      for (var row = 0; row < 3; row++) ...[
+      for (var row = 0; row < 4; row++) ...[
+        if (row > 0) const SizedBox(height: 8),
         Expanded(
           child: Row(
             children: [
               for (var col = 0; col < 3; col++) ...[
+                if (col > 0) const SizedBox(width: 8),
                 Expanded(
-                  child: key('${row * 3 + col + 1}', '${row * 3 + col + 1}'),
+                  child: row < 3
+                      ? key('${row * 3 + col + 1}', '${row * 3 + col + 1}')
+                      : switch (col) {
+                          0 => key('sign', '-'),
+                          1 => key('0', '0'),
+                          _ => Tooltip(
+                            message: '한 자리 지우기 · 길게 누르면 모두 지우기',
+                            child: key(
+                              'back',
+                              '⌫',
+                              icon: Icons.backspace_outlined,
+                              onLongPress: () => input('clear'),
+                            ),
+                          ),
+                        },
                 ),
-                const SizedBox(width: 6),
               ],
-              Expanded(
-                child: switch (row) {
-                  0 => key('back', '⌫', icon: Icons.backspace_outlined),
-                  1 => key('sign', '− / +'),
-                  _ => key('clear', '지우기'),
-                },
-              ),
             ],
           ),
         ),
-        const SizedBox(height: 6),
       ],
-      Expanded(
-        child: Row(
-          children: [
-            Expanded(child: key('prev', '이전 칸', action: () => move(-1))),
-            const SizedBox(width: 6),
-            Expanded(child: key('0', '0')),
-            const SizedBox(width: 6),
-            Expanded(
-              flex: 2,
-              child: key('next', '다음 빈칸', action: () => move(1), accent: true),
-            ),
-          ],
-        ),
-      ),
     ],
   );
   Widget key(
     String id,
     String label, {
-    VoidCallback? action,
+    VoidCallback? onLongPress,
     IconData? icon,
-    bool accent = false,
   }) => Semantics(
     button: true,
-    label: id == 'back' ? '한 자리 지우기' : label,
+    label: id == 'back'
+        ? '한 자리 지우기, 길게 누르면 모두 지우기'
+        : id == 'sign'
+        ? '음수 부호 전환'
+        : label,
     child: Material(
-      color: accent ? const Color(0xFFE3EBCF) : Colors.white,
+      color: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(13),
         side: const BorderSide(color: line),
@@ -463,16 +454,14 @@ class _AdditionExerciseState extends State<AdditionExercise> {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         key: ValueKey('pad-$id'),
-        onTap: widget.busy ? null : action ?? () => input(id),
+        onTap: widget.busy ? null : () => input(id),
+        onLongPress: widget.busy ? null : onLongPress,
         child: Center(
           child: icon != null
-              ? Icon(icon, size: 20)
-              : Text(
+              ? Icon(icon, size: 24)
+              : WordText(
                   label,
-                  style: TextStyle(
-                    fontSize: int.tryParse(id) != null ? 23 : 13,
-                    fontWeight: FontWeight.w700,
-                  ),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
                 ),
         ),
       ),
@@ -491,7 +480,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
               minimumSize: Size.zero,
             ),
             onPressed: widget.busy ? null : widget.previous,
-            child: const Text('이전 표', style: TextStyle(fontSize: 12)),
+            child: const WordText('이전 표', style: TextStyle(fontSize: 12)),
           ),
         ),
         const SizedBox(width: 10),
@@ -503,7 +492,7 @@ class _AdditionExerciseState extends State<AdditionExercise> {
               onPressed: widget.busy ? null : widget.next,
               child: FittedBox(
                 fit: BoxFit.scaleDown,
-                child: Text(widget.last ? '완료하고 채점' : '다음 표'),
+                child: WordText(widget.last ? '완료하고 채점' : '다음 표'),
               ),
             ),
           ),

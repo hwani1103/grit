@@ -1,0 +1,2389 @@
+[
+  {
+    "file": "lib\\addition.dart",
+    "line": 136,
+    "widget": "WordText",
+    "expression": "selectedMemo == null ? '선택한 답안' : '계산 메모'",
+    "literals": [
+      "선택한 답안",
+      "계산 메모"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 141,
+    "widget": "WordText",
+    "expression": "answer.isEmpty ? '—' : answer",
+    "literals": [
+      "—"
+    ],
+    "style": {
+      "fontSize": 23.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 211,
+    "widget": "WordText",
+    "expression": "caption",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 221,
+    "widget": "WordText",
+    "expression": "'파란 칸은 메모'",
+    "literals": [
+      "파란 칸은 메모"
+    ],
+    "style": {
+      "fontSize": 10.0
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 266,
+    "widget": "WordText",
+    "expression": "'메모'",
+    "literals": [
+      "메모"
+    ],
+    "style": {
+      "fontSize": 10.0
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 322,
+    "widget": "WordText",
+    "expression": "value",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 377,
+    "widget": "WordText",
+    "expression": "value.isEmpty ? '·' : value",
+    "literals": [
+      "·"
+    ],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 462,
+    "widget": "WordText",
+    "expression": "label",
+    "literals": [],
+    "style": {
+      "fontSize": 25.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 483,
+    "widget": "WordText",
+    "expression": "'이전 표'",
+    "literals": [
+      "이전 표"
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\addition.dart",
+    "line": 495,
+    "widget": "WordText",
+    "expression": "widget.last ? '완료하고 채점' : '다음 표'",
+    "literals": [
+      "완료하고 채점",
+      "다음 표"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 21,
+    "widget": "WordText",
+    "expression": "'풀이 안내서'",
+    "literals": [
+      "풀이 안내서"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 24,
+    "widget": "Eyebrow",
+    "expression": "'GRIT · LEARN'",
+    "literals": [
+      "GRIT · LEARN"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 26,
+    "widget": "WordText",
+    "expression": "'원리를 알고,\\n조금씩 빨라지기.'",
+    "literals": [
+      "원리를 알고,\n조금씩 빨라지기."
+    ],
+    "style": {
+      "fontSize": 28.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 31,
+    "widget": "WordText",
+    "expression": "'수학이 낯설어도 괜찮습니다. 처음에는 1장부터 읽고, 한 가지 방법을 직접 풀어 본 뒤 다음으로 넘어가세요. 모든 풀이에는 예제, 장점, 주의점과 막혔을 때의 다음 방법이 있습니다.'",
+    "literals": [
+      "수학이 낯설어도 괜찮습니다. 처음에는 1장부터 읽고, 한 가지 방법을 직접 풀어 본 뒤 다음으로 넘어가세요. 모든 풀이에는 예제, 장점, 주의점과 막혔을 때의 다음 방법이 있습니다."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 38,
+    "widget": "WordText",
+    "expression": "'6개 장 · 31개 풀이법 · 13개 확인 문제\\n인터넷 없이 읽을 수 있습니다. 안내서의 확인 문제는 기록에 합산하지 않습니다.'",
+    "literals": [
+      "6개 장 · 31개 풀이법 · 13개 확인 문제\n인터넷 없이 읽을 수 있습니다. 안내서의 확인 문제는 기록에 합산하지 않습니다."
+    ],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 66,
+    "widget": "WordText",
+    "expression": "guideChapters[c].tips[t].title",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 67,
+    "widget": "WordText",
+    "expression": "'${c + 1}장 · ${guideChapters[c].title}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 74,
+    "widget": "WordText",
+    "expression": "'일치하는 풀이가 없습니다. 다른 낱말로 찾아보세요.'",
+    "literals": [
+      "일치하는 풀이가 없습니다. 다른 낱말로 찾아보세요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 107,
+    "widget": "WordText",
+    "expression": "'${index + 1}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 109,
+    "widget": "WordText",
+    "expression": "chapter.title",
+    "literals": [],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 113,
+    "widget": "WordText",
+    "expression": "'${chapter.subtitle}\\n${chapter.tips.length}개 풀이법'",
+    "literals": [],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 136,
+    "widget": "WordText",
+    "expression": "'${chapterIndex + 1}장 · 풀이 안내서'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 139,
+    "widget": "WordText",
+    "expression": "chapter.title",
+    "literals": [],
+    "style": {
+      "fontSize": 27.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 144,
+    "widget": "WordSelectableText",
+    "expression": "chapter.intro",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 152,
+    "widget": "WordText",
+    "expression": "chapter.tips[i].title",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 156,
+    "widget": "WordText",
+    "expression": "'${chapter.tips[i].level} · ${chapter.tips[i].when}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 163,
+    "widget": "WordText",
+    "expression": "'직접 풀고 확인하기'",
+    "literals": [
+      "직접 풀고 확인하기"
+    ],
+    "style": {
+      "fontSize": 21.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 168,
+    "widget": "WordText",
+    "expression": "'먼저 스스로 답과 이유를 생각한 뒤 펼쳐 보세요.'",
+    "literals": [
+      "먼저 스스로 답과 이유를 생각한 뒤 펼쳐 보세요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 176,
+    "widget": "WordText",
+    "expression": "'Q${i + 1}. ${chapter.quizzes[i].question}'",
+    "literals": [],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 180,
+    "widget": "WordText",
+    "expression": "'눌러서 정답과 풀이 확인'",
+    "literals": [
+      "눌러서 정답과 풀이 확인"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 186,
+    "widget": "WordSelectableText",
+    "expression": "chapter.quizzes[i].answer",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 206,
+    "widget": "WordText",
+    "expression": "'다음 장 · ${guideChapters[chapterIndex + 1].title}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 256,
+    "widget": "WordText",
+    "expression": "'${widget.chapterIndex + 1}장 · ${index + 1}/${chapter.tips.length}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 263,
+    "widget": "Eyebrow",
+    "expression": "tip.level",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 265,
+    "widget": "WordSelectableText",
+    "expression": "tip.title",
+    "literals": [],
+    "style": {
+      "fontSize": 26.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 286,
+    "widget": "WordText",
+    "expression": "'이전 풀이'",
+    "literals": [
+      "이전 풀이"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 295,
+    "widget": "WordText",
+    "expression": "index + 1 < chapter.tips.length ? '다음 풀이' : '목차 · 확인 문제'",
+    "literals": [
+      "다음 풀이",
+      "목차 · 확인 문제"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 326,
+    "widget": "WordText",
+    "expression": "title",
+    "literals": [],
+    "style": {
+      "fontSize": 17.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 331,
+    "widget": "WordSelectableText",
+    "expression": "text",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 369,
+    "widget": "WordText",
+    "expression": "'참고 자료와 작성 기준'",
+    "literals": [
+      "참고 자료와 작성 기준"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 370,
+    "widget": "WordText",
+    "expression": "'확인일 2026.10.26 · 원리와 예제는 직접 작성'",
+    "literals": [
+      "확인일 2026.10.26 · 원리와 예제는 직접 작성"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 374,
+    "widget": "WordText",
+    "expression": "'국내 학습 자료에서 자주 등장하는 접근을 조사하고, 초보자를 위해 설명과 예제를 새로 구성했습니다. 강의의 표현이나 원문 문제를 옮긴 교재가 아닙니다. 아래에서 본문 확인과 영상 제목·설명만 확인한 자료를 구분했습니다. 링크는 복사해 브라우저에서 열 수 있습니다.'",
+    "literals": [
+      "국내 학습 자료에서 자주 등장하는 접근을 조사하고, 초보자를 위해 설명과 예제를 새로 구성했습니다. 강의의 표현이나 원문 문제를 옮긴 교재가 아닙니다. 아래에서 본문 확인과 영상 제목·설명만 확인한 자료를 구분했습니다. 링크는 복사해 브라우저에서 열 수 있습니다."
+    ],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 385,
+    "widget": "WordText",
+    "expression": "guideSources[i].title",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 390,
+    "widget": "WordText",
+    "expression": "guideSources[i].note",
+    "literals": [],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 395,
+    "widget": "WordSelectableText",
+    "expression": "guideSources[i].url",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\guide.dart",
+    "line": 401,
+    "widget": "WordText",
+    "expression": "'출처 링크 복사'",
+    "literals": [
+      "출처 링크 복사"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 53,
+    "widget": "WordText",
+    "expression": "value",
+    "literals": [],
+    "style": {
+      "weight": 500
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 79,
+    "widget": "WordText",
+    "expression": "'${kind.title} 기록'",
+    "literals": [],
+    "style": {
+      "fontSize": 20.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 94,
+    "widget": "WordText",
+    "expression": "'완료한 세트 기준 · 최근 회차부터'",
+    "literals": [
+      "완료한 세트 기준 · 최근 회차부터"
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 103,
+    "widget": "WordText",
+    "expression": "'아직 완료한 연습이 없어요.'",
+    "literals": [
+      "아직 완료한 연습이 없어요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 261,
+    "widget": "WordText",
+    "expression": "text",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0,
+      "letterSpacing": 1.7,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 274,
+    "widget": "WordText",
+    "expression": "message",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 293,
+    "widget": "WordText",
+    "expression": "'GRIT.'",
+    "literals": [
+      "GRIT."
+    ],
+    "style": {
+      "fontSize": 28.0,
+      "letterSpacing": -1.2,
+      "weight": 900
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 364,
+    "widget": "WordText",
+    "expression": "c.error!",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 366,
+    "widget": "WordText",
+    "expression": "'다시 읽기'",
+    "literals": [
+      "다시 읽기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 392,
+    "widget": "WordText",
+    "expression": "dateLabel(DateTime.now())",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 396,
+    "widget": "WordText",
+    "expression": "'오늘도, 한 걸음.'",
+    "literals": [
+      "오늘도, 한 걸음."
+    ],
+    "style": {
+      "height": 1.2,
+      "letterSpacing": 0.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 408,
+    "widget": "WordText",
+    "expression": "'작은 연습이 쌓여, 결국 실력이 됩니다.'",
+    "literals": [
+      "작은 연습이 쌓여, 결국 실력이 됩니다."
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 435,
+    "widget": "WordText",
+    "expression": "'풀이 안내서'",
+    "literals": [
+      "풀이 안내서"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 457,
+    "widget": "WordText",
+    "expression": "'꾸준함의 기록'",
+    "literals": [
+      "꾸준함의 기록"
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 483,
+    "widget": "WordText",
+    "expression": "'저장하지 못했어요.'",
+    "literals": [
+      "저장하지 못했어요."
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 494,
+    "widget": "WordText",
+    "expression": "'다시 시도'",
+    "literals": [
+      "다시 시도"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 560,
+    "widget": "WordText",
+    "expression": "value",
+    "literals": [],
+    "style": {
+      "fontSize": 27.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 569,
+    "widget": "WordText",
+    "expression": "label",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 604,
+    "widget": "WordText",
+    "expression": "symbol",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 620,
+    "widget": "WordText",
+    "expression": "kind.title",
+    "literals": [],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 631,
+    "widget": "WordText",
+    "expression": "kind.quantity",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 661,
+    "widget": "WordText",
+    "expression": "'기록'",
+    "literals": [
+      "기록"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 694,
+    "widget": "Eyebrow",
+    "expression": "'READY WHEN YOU ARE'",
+    "literals": [
+      "READY WHEN YOU ARE"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 696,
+    "widget": "WordText",
+    "expression": "kind.title",
+    "literals": [],
+    "style": {
+      "fontSize": 30.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 704,
+    "widget": "WordText",
+    "expression": "kind.subtitle",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 710,
+    "widget": "WordText",
+    "expression": "kind.quantity",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 715,
+    "widget": "WordText",
+    "expression": "kind == SetKind.addition ? '빈칸을 눌러 숫자를 입력하세요. − 버튼으로 음수 부호를 바꿀 수 있어요. 지우기 버튼을 길게 누르면 선택한 칸을 모두 지웁니다.' : '대소비교는 버튼으로, 분수 정렬은 큰 것부터 차례로 탭하세요.'",
+    "literals": [
+      "빈칸을 눌러 숫자를 입력하세요. − 버튼으로 음수 부호를 바꿀 수 있어요. 지우기 버튼을 길게 누르면 선택한 칸을 모두 지웁니다.",
+      "대소비교는 버튼으로, 분수 정렬은 큰 것부터 차례로 탭하세요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 721,
+    "widget": "WordText",
+    "expression": "'시작과 함께 새 문제와 타이머가 열립니다.\\n다른 앱을 보거나 화면을 끄면 타이머가 멈추고, 돌아오면 다시 흐릅니다.\\n연습 화면을 나가거나 앱이 종료되면 진행 내용은 사라집니다.'",
+    "literals": [
+      "시작과 함께 새 문제와 타이머가 열립니다.\n다른 앱을 보거나 화면을 끄면 타이머가 멈추고, 돌아오면 다시 흐릅니다.\n연습 화면을 나가거나 앱이 종료되면 진행 내용은 사라집니다."
+    ],
+    "style": {
+      "fontSize": 13.0,
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 734,
+    "widget": "WordText",
+    "expression": "'시작'",
+    "literals": [
+      "시작"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 773,
+    "widget": "WordText",
+    "expression": "'PSAT 기출 기록 (${c.psatRecords.length})'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 776,
+    "widget": "Eyebrow",
+    "expression": "'YOUR PROGRESS'",
+    "literals": [
+      "YOUR PROGRESS"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 778,
+    "widget": "WordText",
+    "expression": "'쌓이는 노력.'",
+    "literals": [
+      "쌓이는 노력."
+    ],
+    "style": {
+      "fontSize": 31.0,
+      "letterSpacing": 0.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 787,
+    "widget": "WordText",
+    "expression": "'시간보다 중요한 건, 다시 시작한 당신.'",
+    "literals": [
+      "시간보다 중요한 건, 다시 시작한 당신."
+    ],
+    "style": {
+      "fontSize": 14.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 797,
+    "widget": "WordText",
+    "expression": "'전체'",
+    "literals": [
+      "전체"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 803,
+    "widget": "WordText",
+    "expression": "kind.title",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 817,
+    "widget": "WordText",
+    "expression": "'첫 번째 기록을 기다리고 있어요.'",
+    "literals": [
+      "첫 번째 기록을 기다리고 있어요."
+    ],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 822,
+    "widget": "WordText",
+    "expression": "'연습을 완료하면 이곳에 차곡차곡 쌓여요.'",
+    "literals": [
+      "연습을 완료하면 이곳에 차곡차곡 쌓여요."
+    ],
+    "style": {
+      "fontSize": 13.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 835,
+    "widget": "Eyebrow",
+    "expression": "dateLabel(records[i].startedAt)",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 864,
+    "widget": "WordText",
+    "expression": "r.kind.title",
+    "literals": [],
+    "style": {
+      "fontSize": 17.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 872,
+    "widget": "WordText",
+    "expression": "'${'${r.startedAt.hour}'.padLeft(2, '0')}:${'${r.startedAt.minute}'.padLeft(2, '0')}  ·  ${durationLabel(r.elapsedSeconds!)}'",
+    "literals": [
+      "0",
+      "0"
+    ],
+    "style": {
+      "fontSize": 13.0
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 879,
+    "widget": "WordText",
+    "expression": "'${r.correct}'",
+    "literals": [],
+    "style": {
+      "fontSize": 26.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 886,
+    "widget": "WordText",
+    "expression": "'/${r.total}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 899,
+    "widget": "WordText",
+    "expression": "'기록을 모두 초기화할까요?'",
+    "literals": [
+      "기록을 모두 초기화할까요?"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 900,
+    "widget": "WordText",
+    "expression": "'비타민의 누적 통계·완료 기록과 PSAT 세 과목의 모든 풀이 기록이 삭제됩니다. 되돌릴 수 없습니다.'",
+    "literals": [
+      "비타민의 누적 통계·완료 기록과 PSAT 세 과목의 모든 풀이 기록이 삭제됩니다. 되돌릴 수 없습니다."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 906,
+    "widget": "WordText",
+    "expression": "'취소'",
+    "literals": [
+      "취소"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 911,
+    "widget": "WordText",
+    "expression": "'모두 초기화'",
+    "literals": [
+      "모두 초기화"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 941,
+    "widget": "WordText",
+    "expression": "'당신의 연습, 당신의 기록.'",
+    "literals": [
+      "당신의 연습, 당신의 기록."
+    ],
+    "style": {
+      "fontSize": 22.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 946,
+    "widget": "WordText",
+    "expression": "'연습 기록은 이 기기에 자동 저장됩니다. 앱을 삭제하면 기록도 삭제됩니다.'",
+    "literals": [
+      "연습 기록은 이 기기에 자동 저장됩니다. 앱을 삭제하면 기록도 삭제됩니다."
+    ],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 957,
+    "widget": "WordText",
+    "expression": "'기록 초기화'",
+    "literals": [
+      "기록 초기화"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 961,
+    "widget": "WordText",
+    "expression": "'비타민과 PSAT 기출 풀이 기록을 모두 삭제'",
+    "literals": [
+      "비타민과 PSAT 기출 풀이 기록을 모두 삭제"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 974,
+    "widget": "WordText",
+    "expression": "'GRIT'",
+    "literals": [
+      "GRIT"
+    ],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\main.dart",
+    "line": 979,
+    "widget": "WordText",
+    "expression": "'매일 조금씩, 기어이 해낸다.'",
+    "literals": [
+      "매일 조금씩, 기어이 해낸다."
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 114,
+    "widget": "WordText",
+    "expression": "'이번 연습을 그만둘까요?'",
+    "literals": [
+      "이번 연습을 그만둘까요?"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 115,
+    "widget": "WordText",
+    "expression": "'나가면 이번 문제와 답안·메모가 사라지고 완료 기록에는 남지 않습니다. 기존 완료 기록은 유지됩니다.\\n\\n이 안내를 보는 동안에도 시간은 흐릅니다.'",
+    "literals": [
+      "나가면 이번 문제와 답안·메모가 사라지고 완료 기록에는 남지 않습니다. 기존 완료 기록은 유지됩니다.\n\n이 안내를 보는 동안에도 시간은 흐릅니다."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 121,
+    "widget": "WordText",
+    "expression": "'계속 풀기'",
+    "literals": [
+      "계속 풀기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 126,
+    "widget": "WordText",
+    "expression": "'나가기'",
+    "literals": [
+      "나가기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 153,
+    "widget": "WordText",
+    "expression": "'아직 ${s.total - s.answered}개가 남아 있어요'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 154,
+    "widget": "WordText",
+    "expression": "'지금 완료하면 미응답은 오답으로 기록됩니다.'",
+    "literals": [
+      "지금 완료하면 미응답은 오답으로 기록됩니다."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 158,
+    "widget": "WordText",
+    "expression": "'마저 풀기'",
+    "literals": [
+      "마저 풀기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 162,
+    "widget": "WordText",
+    "expression": "'제출하고 채점'",
+    "literals": [
+      "제출하고 채점"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 218,
+    "widget": "WordText",
+    "expression": "'문제 한눈에 보기'",
+    "literals": [
+      "문제 한눈에 보기"
+    ],
+    "style": {
+      "fontSize": 22.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 223,
+    "widget": "WordText",
+    "expression": "'초록색은 응답 완료 · 정답 여부는 제출 후 확인'",
+    "literals": [
+      "초록색은 응답 완료 · 정답 여부는 제출 후 확인"
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 249,
+    "widget": "WordText",
+    "expression": "'${i + 1}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 284,
+    "widget": "WordText",
+    "expression": "'표 ${index + 1} / 5'",
+    "literals": [],
+    "style": {
+      "fontSize": 14.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 297,
+    "widget": "WordText",
+    "expression": "'${s.answered}/40 응답'",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 306,
+    "widget": "WordText",
+    "expression": "clockLabel(value)",
+    "literals": [],
+    "style": {
+      "fontSize": 15.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 328,
+    "widget": "WordText",
+    "expression": "c.error!",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 359,
+    "widget": "Eyebrow",
+    "expression": "'이번 연습'",
+    "literals": [
+      "이번 연습"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 363,
+    "widget": "WordText",
+    "expression": "clockLabel(value)",
+    "literals": [],
+    "style": {
+      "fontSize": 26.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 369,
+    "widget": "WordText",
+    "expression": "'${s.answered}/${s.total} 응답'",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 395,
+    "widget": "WordText",
+    "expression": "'${i + 1}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 401,
+    "widget": "WordText",
+    "expression": "'초록색 · 응답 완료'",
+    "literals": [
+      "초록색 · 응답 완료"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 433,
+    "widget": "WordText",
+    "expression": "'${index + 1} / ${s.problems.length}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 439,
+    "widget": "WordText",
+    "expression": "clockLabel(value)",
+    "literals": [],
+    "style": {
+      "fontSize": 16.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 456,
+    "widget": "WordText",
+    "expression": "c.error!",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 474,
+    "widget": "WordText",
+    "expression": "p.type == ProblemType.order ? '큰 것부터 차례로 탭하세요.' : '어느 쪽이 더 클까요?'",
+    "literals": [
+      "큰 것부터 차례로 탭하세요.",
+      "어느 쪽이 더 클까요?"
+    ],
+    "style": {
+      "letterSpacing": 0.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 485,
+    "widget": "WordText",
+    "expression": "p.type == ProblemType.order ? '선택한 카드를 다시 누르면 취소됩니다.' : '답을 선택하면 다음 문제로 넘어갑니다.'",
+    "literals": [
+      "선택한 카드를 다시 누르면 취소됩니다.",
+      "답을 선택하면 다음 문제로 넘어갑니다."
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 515,
+    "widget": "WordText",
+    "expression": "'완료하고 채점하기'",
+    "literals": [
+      "완료하고 채점하기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 519,
+    "widget": "WordText",
+    "expression": "'다음 문제'",
+    "literals": [
+      "다음 문제"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 576,
+    "widget": "WordText",
+    "expression": "s.kind.title",
+    "literals": [],
+    "style": {
+      "fontSize": 18.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 589,
+    "widget": "WordText",
+    "expression": "'완료'",
+    "literals": [
+      "완료"
+    ],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 618,
+    "widget": "WordText",
+    "expression": "'${pair[0]}'",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 634,
+    "widget": "WordText",
+    "expression": "'${pair[1]}'",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 664,
+    "widget": "WordText",
+    "expression": "i == 0 ? '왼쪽' : '오른쪽'",
+    "literals": [
+      "왼쪽",
+      "오른쪽"
+    ],
+    "style": {
+      "fontSize": 12.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 676,
+    "widget": "WordText",
+    "expression": "'${problem.values[i][0]} × ${(problem.values[i][1] / 10).toStringAsFixed(1)}'",
+    "literals": [],
+    "style": {
+      "fontSize": 28.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 703,
+    "widget": "WordText",
+    "expression": "'VS'",
+    "literals": [
+      "VS"
+    ],
+    "style": {
+      "fontSize": 10.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 724,
+    "widget": "WordText",
+    "expression": "'이전 문제로 돌아가 답을 수정할 수 있어요.'",
+    "literals": [
+      "이전 문제로 돌아가 답을 수정할 수 있어요."
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 745,
+    "widget": "WordText",
+    "expression": "sign",
+    "literals": [],
+    "style": {
+      "fontSize": 34.0,
+      "height": 1.1,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 755,
+    "widget": "WordText",
+    "expression": "label",
+    "literals": [],
+    "style": {
+      "fontSize": 14.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 806,
+    "widget": "Eyebrow",
+    "expression": "'YOUR ORDER  /  큰 값 → 작은 값'",
+    "literals": [
+      "YOUR ORDER  /  큰 값 → 작은 값"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 822,
+    "widget": "WordText",
+    "expression": "i < selected.length ? String.fromCharCode(65 + selected[i]) : '·'",
+    "literals": [
+      "·"
+    ],
+    "style": {
+      "fontSize": 22.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 843,
+    "widget": "WordText",
+    "expression": "'순서 다시 선택'",
+    "literals": [
+      "순서 다시 선택"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 881,
+    "widget": "WordText",
+    "expression": "String.fromCharCode(65 + i)",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 890,
+    "widget": "WordText",
+    "expression": "rank >= 0 ? '선택됨' : ' '",
+    "literals": [
+      "선택됨",
+      " "
+    ],
+    "style": {
+      "fontSize": 12.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1022,
+    "widget": "WordText",
+    "expression": "value",
+    "literals": [],
+    "style": {
+      "fontSize": 11.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1088,
+    "widget": "WordText",
+    "expression": "'${p.values[r][col]}'",
+    "literals": [],
+    "style": {
+      "fontSize": 16.0,
+      "weight": 600
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1122,
+    "widget": "WordText",
+    "expression": "'가운데 열을 좌우로 밀어 보세요. 합계는 고정됩니다.'",
+    "literals": [
+      "가운데 열을 좌우로 밀어 보세요. 합계는 고정됩니다."
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1198,
+    "widget": "WordText",
+    "expression": "'− / +'",
+    "literals": [
+      "− / +"
+    ],
+    "style": {
+      "fontSize": 17.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1209,
+    "widget": "WordText",
+    "expression": "'다음 빈칸'",
+    "literals": [
+      "다음 빈칸"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1214,
+    "widget": "WordText",
+    "expression": "'흰 칸은 답칸 · 회색 칸은 주어진 값 · 연습용 데이터'",
+    "literals": [
+      "흰 칸은 답칸 · 회색 칸은 주어진 값 · 연습용 데이터"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1231,
+    "widget": "WordText",
+    "expression": "'연습 기록'",
+    "literals": [
+      "연습 기록"
+    ],
+    "style": {
+      "fontSize": 18.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1244,
+    "widget": "Eyebrow",
+    "expression": "'ONE STEP FORWARD'",
+    "literals": [
+      "ONE STEP FORWARD"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1246,
+    "widget": "WordText",
+    "expression": "correct == total ? '빈틈없이 해냈어요.' : '오늘의 노력이 쌓였어요.'",
+    "literals": [
+      "빈틈없이 해냈어요.",
+      "오늘의 노력이 쌓였어요."
+    ],
+    "style": {
+      "fontSize": 28.0,
+      "letterSpacing": 0.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1255,
+    "widget": "WordText",
+    "expression": "'${dateLabel(session.startedAt)}  ·  ${session.kind.title}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1265,
+    "widget": "WordText",
+    "expression": "'정답'",
+    "literals": [
+      "정답"
+    ],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1277,
+    "widget": "WordText",
+    "expression": "'$correct'",
+    "literals": [],
+    "style": {
+      "fontSize": 64.0,
+      "height": 1.15,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1286,
+    "widget": "WordText",
+    "expression": "' / $total'",
+    "literals": [],
+    "style": {
+      "fontSize": 23.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1294,
+    "widget": "WordText",
+    "expression": "'${(correct / total * 100).round()}%'",
+    "literals": [],
+    "style": {
+      "fontSize": 25.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1316,
+    "widget": "WordText",
+    "expression": "durationLabel(session.elapsedSeconds!)",
+    "literals": [],
+    "style": {
+      "fontSize": 18.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1325,
+    "widget": "WordText",
+    "expression": "'미응답 ${total - session.answered}개'",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1338,
+    "widget": "WordText",
+    "expression": "'실제 경과시간 기준 · 오답 벌점 없음 · 기록 저장 완료'",
+    "literals": [
+      "실제 경과시간 기준 · 오답 벌점 없음 · 기록 저장 완료"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1344,
+    "widget": "Eyebrow",
+    "expression": "'REVIEW YOUR ANSWERS'",
+    "literals": [
+      "REVIEW YOUR ANSWERS"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1357,
+    "widget": "WordText",
+    "expression": "'돌아가기'",
+    "literals": [
+      "돌아가기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1395,
+    "widget": "WordText",
+    "expression": "'${index + 1}'.padLeft(2, '0')",
+    "literals": [
+      "0"
+    ],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1404,
+    "widget": "WordText",
+    "expression": "problem.type == ProblemType.table ? '표 ${index + 1}' : problem.type == ProblemType.order ? '분수 정렬' : '대소비교'",
+    "literals": [
+      "분수 정렬",
+      "대소비교"
+    ],
+    "style": {
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1419,
+    "widget": "WordText",
+    "expression": "'$correct/${expected.length}'",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1459,
+    "widget": "WordText",
+    "expression": "'틀린 칸: 내 답 → 정답 · 파란 칸: 계산 메모\\n좌우로 밀어 전체 표 확인'",
+    "literals": [
+      "틀린 칸: 내 답 → 정답 · 파란 칸: 계산 메모\n좌우로 밀어 전체 표 확인"
+    ],
+    "style": {
+      "fontSize": 10.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1469,
+    "widget": "WordText",
+    "expression": "'${String.fromCharCode(65 + i)}  ${formatOperand(problem.values[i])}'",
+    "literals": [],
+    "style": {
+      "weight": 600
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1476,
+    "widget": "WordText",
+    "expression": "'내 순서   ${orderAnswer(session.answers['$index'])}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1481,
+    "widget": "WordText",
+    "expression": "'정답 순서   ${problem.ordered.map((i) => String.fromCharCode(65 + i)).join(' > ')}'",
+    "literals": [
+      " > "
+    ],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1486,
+    "widget": "WordText",
+    "expression": "'${formatOperand(problem.values[0])}  ${problem.relation}  ${formatOperand(problem.values[1])}'",
+    "literals": [],
+    "style": {
+      "fontSize": 17.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1494,
+    "widget": "WordText",
+    "expression": "'내 답  ${session.answers['$index'] ?? '미응답'}    ·    정답  ${problem.relation}'",
+    "literals": [
+      "미응답"
+    ],
+    "style": {
+      "fontSize": 13.0
+    }
+  },
+  {
+    "file": "lib\\practice.dart",
+    "line": 1543,
+    "widget": "WordText",
+    "expression": "value",
+    "literals": [],
+    "style": {
+      "weight": 600
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 40,
+    "widget": "WordText",
+    "expression": "'문항을 읽지 못했어요 · 다시 읽기'",
+    "literals": [
+      "문항을 읽지 못했어요 · 다시 읽기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 59,
+    "widget": "WordText",
+    "expression": "'읽고, 판단하고,\\n근거까지.'",
+    "literals": [
+      "읽고, 판단하고,\n근거까지."
+    ],
+    "style": {
+      "fontSize": 29.0,
+      "height": 1.25,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 68,
+    "widget": "WordText",
+    "expression": "'${widget.subject} · ${allSets.length}개 Set · ${allSets.length * 10}문항\\n하루 15분, 풀 수 있는 만큼 풀고 해설까지 읽어보세요.'",
+    "literals": [],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 78,
+    "widget": "WordText",
+    "expression": "'이 과목에서 다시 볼 오답이 없어요.'",
+    "literals": [
+      "이 과목에서 다시 볼 오답이 없어요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 101,
+    "widget": "WordText",
+    "expression": "'기출 풀이 기록 전체 보기'",
+    "literals": [
+      "기출 풀이 기록 전체 보기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 148,
+    "widget": "WordText",
+    "expression": "'${set.title} ($count / 10)'",
+    "literals": [],
+    "style": {
+      "fontSize": 20.0,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 156,
+    "widget": "WordText",
+    "expression": "'난도 · ${set.difficulty}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 168,
+    "widget": "WordText",
+    "expression": "complete ? '풀이 완료' : '채점한 문항 $count개'",
+    "literals": [
+      "풀이 완료"
+    ],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 176,
+    "widget": "WordText",
+    "expression": "'다시 볼 오답 ${progress.wrong(set)}개'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 196,
+    "widget": "WordText",
+    "expression": "'다시 볼 오답'",
+    "literals": [
+      "다시 볼 오답"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 223,
+    "widget": "WordText",
+    "expression": "'${widget.set.subject} · ${widget.set.title}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 240,
+    "widget": "WordText",
+    "expression": "'${widget.set.title} (${progress.completed(widget.set)} / 10)'",
+    "literals": [],
+    "style": {
+      "fontSize": 24.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 248,
+    "widget": "WordText",
+    "expression": "'오답도 풀이 완료에 포함돼요. 같은 문항을 다시 풀어도 완료 수는 늘어나지 않아요.'",
+    "literals": [
+      "오답도 풀이 완료에 포함돼요. 같은 문항을 다시 풀어도 완료 수는 늘어나지 않아요."
+    ],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 258,
+    "widget": "WordText",
+    "expression": "'이 Set에서 다시 볼 오답이 없어요.'",
+    "literals": [
+      "이 Set에서 다시 볼 오답이 없어요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 319,
+    "widget": "WordText",
+    "expression": "'${q.subject} · 원문 ${q.number}번'",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 324,
+    "widget": "WordText",
+    "expression": "q.title",
+    "literals": [],
+    "style": {
+      "fontSize": 18.0,
+      "height": 1.4,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 337,
+    "widget": "WordText",
+    "expression": "q.tag",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 338,
+    "widget": "WordText",
+    "expression": "attempt == null ? '미풀이' : attempt!.correct ? '정답 · 해설 복습' : '오답 · 해설 복습'",
+    "literals": [
+      "미풀이",
+      "정답 · 해설 복습",
+      "오답 · 해설 복습"
+    ],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 364,
+    "widget": "WordText",
+    "expression": "'기출 풀이 기록'",
+    "literals": [
+      "기출 풀이 기록"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 372,
+    "widget": "WordText",
+    "expression": "'채점한 문항이 여기에 저장돼요.'",
+    "literals": [
+      "채점한 문항이 여기에 저장돼요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 380,
+    "widget": "WordText",
+    "expression": "'${a.question.subject} ${a.question.number}번 · ${a.question.title}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 383,
+    "widget": "WordText",
+    "expression": "'${a.completedAt.toLocal().toString().substring(0, 16)} · ${psatTime(a.seconds)}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 499,
+    "widget": "WordText",
+    "expression": "'문제 풀이를 그만둘까요?'",
+    "literals": [
+      "문제 풀이를 그만둘까요?"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 500,
+    "widget": "WordText",
+    "expression": "'아직 채점하지 않은 답안과 시간은 저장되지 않아요. 이전 완료 기록은 그대로 유지돼요.'",
+    "literals": [
+      "아직 채점하지 않은 답안과 시간은 저장되지 않아요. 이전 완료 기록은 그대로 유지돼요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 506,
+    "widget": "WordText",
+    "expression": "'계속 풀기'",
+    "literals": [
+      "계속 풀기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 510,
+    "widget": "WordText",
+    "expression": "'그만두기'",
+    "literals": [
+      "그만두기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 529,
+    "widget": "WordText",
+    "expression": "'${q.subject} · ${q.number}번'",
+    "literals": [],
+    "style": {
+      "fontSize": 18.0
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 555,
+    "widget": "WordText",
+    "expression": "'글자 크기 ${x.toInt()}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 650,
+    "widget": "PsatText",
+    "expression": "text",
+    "literals": [],
+    "style": {
+      "height": 1.75,
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 663,
+    "widget": "PsatText",
+    "expression": "'${q.data['source']} · ${q.data['book']} 책형'",
+    "literals": [
+      "source",
+      "book"
+    ],
+    "style": {
+      "fontSize": 12.0,
+      "height": 1.5
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 674,
+    "widget": "PsatPassage",
+    "expression": "q.data['bodyBeforeFigures'] as String",
+    "literals": [
+      "bodyBeforeFigures"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 725,
+    "widget": "WordText",
+    "expression": "'자료 이미지를 읽지 못했어요.'",
+    "literals": [
+      "자료 이미지를 읽지 못했어요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 734,
+    "widget": "WordText",
+    "expression": "'표·그림을 누르면 확대'",
+    "literals": [
+      "표·그림을 누르면 확대"
+    ],
+    "style": {
+      "fontSize": 11.0
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 750,
+    "widget": "PsatPassage",
+    "expression": "paragraphs[i]",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 765,
+    "widget": "PsatPassage",
+    "expression": "q.body",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 890,
+    "widget": "WordText",
+    "expression": "marks[i]",
+    "literals": [],
+    "style": {
+      "fontSize": 12.0
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 892,
+    "widget": "WordText",
+    "expression": "q.choices[i]",
+    "literals": [],
+    "style": {
+      "height": 1.4
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 902,
+    "widget": "WordText",
+    "expression": "marks[i]",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1018,
+    "widget": "WordText",
+    "expression": "done == null ? '풀이 중 · ${psatTime(seconds)}' : '풀이 시간 · ${psatTime(seconds)}'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1064,
+    "widget": "WordText",
+    "expression": "'채점하고 해설 읽기'",
+    "literals": [
+      "채점하고 해설 읽기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1067,
+    "widget": "WordText",
+    "expression": "'선택은 채점 전까지 바꿀 수 있어요. 채점한 문항만 기록에 저장됩니다.'",
+    "literals": [
+      "선택은 채점 전까지 바꿀 수 있어요. 채점한 문항만 기록에 저장됩니다."
+    ],
+    "style": {
+      "height": 1.5
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1082,
+    "widget": "WordText",
+    "expression": "done!.correct ? '정답이에요.' : '근거를 다시 짚어봐요.'",
+    "literals": [
+      "정답이에요.",
+      "근거를 다시 짚어봐요."
+    ],
+    "style": {
+      "fontSize": 21.0,
+      "weight": 800
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1134,
+    "widget": "WordText",
+    "expression": "'출처와 편집 안내'",
+    "literals": [
+      "출처와 편집 안내"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1138,
+    "widget": "WordText",
+    "expression": "q.data['editNote'] as String",
+    "literals": [
+      "editNote"
+    ],
+    "style": {
+      "height": 1.6
+    }
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1153,
+    "widget": "WordText",
+    "expression": "'공식 출처 주소 복사'",
+    "literals": [
+      "공식 출처 주소 복사"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1166,
+    "widget": "WordText",
+    "expression": "'이 문제 다시 풀기'",
+    "literals": [
+      "이 문제 다시 풀기"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1171,
+    "widget": "WordText",
+    "expression": "'목록으로'",
+    "literals": [
+      "목록으로"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1182,
+    "widget": "WordText",
+    "expression": "'공식 원문 · ${q.number}번'",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1188,
+    "widget": "WordText",
+    "expression": "'두 손가락으로 확대하고, 확대한 화면을 움직여 읽으세요.'",
+    "literals": [
+      "두 손가락으로 확대하고, 확대한 화면을 움직여 읽으세요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1198,
+    "widget": "WordText",
+    "expression": "'원문 이미지를 읽지 못했어요.'",
+    "literals": [
+      "원문 이미지를 읽지 못했어요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1214,
+    "widget": "WordText",
+    "expression": "'자료 확대'",
+    "literals": [
+      "자료 확대"
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat.dart",
+    "line": 1220,
+    "widget": "WordText",
+    "expression": "'두 손가락으로 확대하고 움직여 읽으세요.'",
+    "literals": [
+      "두 손가락으로 확대하고 움직여 읽으세요."
+    ],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat_text.dart",
+    "line": 297,
+    "widget": "PsatText",
+    "expression": "block",
+    "literals": [],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat_text.dart",
+    "line": 325,
+    "widget": "Text",
+    "expression": "section.group(1)!.replaceAll(RegExp(r'\\s'), '')",
+    "literals": [
+      "\\s",
+      ""
+    ],
+    "style": {
+      "weight": 700
+    }
+  },
+  {
+    "file": "lib\\psat_text.dart",
+    "line": 341,
+    "widget": "PsatText",
+    "expression": "block",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\psat_text.dart",
+    "line": 372,
+    "widget": "Text",
+    "expression": "marker",
+    "literals": [],
+    "style": {
+      "weight": 400
+    }
+  },
+  {
+    "file": "lib\\psat_text.dart",
+    "line": 375,
+    "widget": "PsatText",
+    "expression": "text",
+    "literals": [],
+    "style": {}
+  },
+  {
+    "file": "lib\\word_text.dart",
+    "line": 48,
+    "widget": "WordText",
+    "expression": "data",
+    "literals": [],
+    "style": {}
+  }
+]

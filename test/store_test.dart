@@ -18,6 +18,35 @@ class MemoryPersistence implements Persistence {
 
 void main() {
   test(
+    'background intervals are excluded from completed and reloaded time',
+    () async {
+      final disk = MemoryPersistence();
+      final c = AppController(disk);
+      final session = await c.start(SetKind.addition);
+      final start = session.startedAt;
+      session.pauseTiming(start.add(const Duration(milliseconds: 1250)));
+      // Repeated inactive/hidden/paused notifications must not restart the pause.
+      session.pauseTiming(start.add(const Duration(seconds: 2)));
+      expect(session.elapsedAt(start.add(const Duration(minutes: 20))), 1);
+      session.resumeTiming(start.add(const Duration(seconds: 61)));
+      session.pauseTiming(start.add(const Duration(milliseconds: 61750)));
+      session.resumeTiming(start.add(const Duration(milliseconds: 120250)));
+      // 1.25 + .75 + 1.5 foreground seconds, rounded once at the end.
+      final done = await c.complete(
+        start.add(const Duration(milliseconds: 121750)),
+      );
+      expect(done.elapsedSeconds, 3);
+      final reopened = AppController(disk);
+      await reopened.load();
+      expect(reopened.records.single.elapsedSeconds, 3);
+      expect(reopened.records.single.startedAt, start);
+      expect(reopened.active, isNull);
+      c.dispose();
+      reopened.dispose();
+    },
+  );
+
+  test(
     'unfinished work stays only in memory; completion preserves review and memo',
     () async {
       final disk = MemoryPersistence();
