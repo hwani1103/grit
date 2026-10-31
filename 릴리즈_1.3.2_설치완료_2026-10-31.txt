@@ -1,0 +1,27 @@
+GRIT1.3.2+5002 release·USB 설치 완료 — 2026-10-31
+
+최신900문항·난도순 Set·비타민/UI 개선을 포함한 release 빌드 완료.
+기존 전용 서명 일치, APK내900문항·90Set·3039이미지와 현재 소스 자산 바이트 대조 PASS.
+과목별 기본→혼합→심화→고난도 순서 확인.
+최종 사전 Set/기록 검사5 PASS, lib/test 정적분석 No issues found.
+기존 UI 감사44항목 성공 근거·92화면 캡처 기록은 별도 보고서에 보존.
+
+폰SM-S948N에 adb install -r로 업데이트 Success.
+앱 삭제/pm clear/데이터 초기화 없음. 최초 설치 시각 유지 확인.
+실제 설치 버전1.3.2 / versionCode5002 확인. 앱 실행 Status: ok.
+실기기 홈에서 새 기록 버튼 표시 확인. 전체 실기기 UI 회귀·접힘/펼침·물음표/전환 체감 검증을 마친 것은 아님.
+태블릿 조작과 컴퓨터 종료 없음.
+
+APK: releases/GRIT-1.3.2-5002-PSAT900-UI-arm64.apk
+크기: 774769847bytes
+SHA256: 5916ea2f7772a6d88d612a5c8a5b1124e13c82cdad56a5f36d930de2a2526f3a
+서명 인증서SHA256: 726a4e0da6d5a53471385f606b79b2a52058c032e4578edb3d451a37fa00cda5
+기존1.3.1+5001 APK도 보존.
+
+앱 소스 커밋071399c를 GitHub origin/main으로 푸시 완료.
+저장소: https://github.com/hwani1103/grit
+서명키/비밀번호/개인기록/로컬검수산출물/릴리즈APK는 Git에서 제외했다.
+이 완료 기록은 앱 소스 변경 없이 후속 문서 커밋으로 남긴다.
+서버·광고·결제·구매 코드 인증은 포함하지 않았다.
+
+근거: artifacts/release_1_3_2_5002_20261031/ 및 docs/verification/release-1.3.2-5002.json

@@ -1,3 +1,5 @@
+2026-10-31 최신 release1.3.2+5002: Set/기록5 PASS, lib/test 정적분석 No issues found. 기존 서명·900문항/90Set/3039이미지 패키지 바이트·난도순 검증 PASS. 사용자 폰 업데이트 설치/버전/최초설치시각 유지/앱 실행/홈 표시 확인. 전체 실기기 회귀와 구분한다. 근거 docs/verification/release-1.3.2-5002.json 및 릴리즈_1.3.2_설치완료_2026-10-31.txt.
+
 # GRIT 검증 및 빌드 상태
 
 > 최신 상태 (2026-10-27): 아래 마지막 항목의 날짜 포함 APK가 최신이다. 안내서/무스크롤 홈/미완료 폐기 구현 및 release 빌드 완료, 설치는 사용자 지시에 따라 하지 않았다. 이전 항목은 당시 이력이다.
@@ -14,9 +16,9 @@
 ## 기존 구현 검증
 - 생성기: 500 seeds × 3종 세트 생성 조건/채점/직렬화 검사 통과.
 - 저장: 재시작, 저장 실패 보존, 복원 병합, 손상 파일 보존, 완료 트랜잭션과 background flush 경합 검사 통과.
-- 이전 release를 허용된 휴대폰 SM-S948N (R5KL20DHWAE)에 설치하고 실행, 입력 후 프로세스 재시작 시 답안 복원 확인.
+- 이전 release를 허용된 휴대폰 SM-S948N (<허용폰_SERIAL>)에 설치하고 실행, 입력 후 프로세스 재시작 시 답안 복원 확인.
 - 위 호스트 검사와 이전 설치본 확인을 최신 숫자패드의 실기기 검증으로 확대하지 않는다.
-- 태블릿 SM-X400 (R54Y800G39V)은 조작하지 않는다.
+- 태블릿 SM-X400 (<조작금지_태블릿_SERIAL>)은 조작하지 않는다.
 ## 폴더블 후속 — 2026-10-26
 - 덧셈·뺄셈 화면에서 정사각형에 가까운 넓은 창도 표/숫자패드 좌우 배치를 사용한다. 기기 이름 대신 실제 가용 폭과 높이를 사용하고, 패드 최대 크기를 제한한다.
 - UI 12개 검사 PASS: 기존 320×640 / 390×844 / 844×390과 추가 673×841 / 720×840 / 900×700 / 1024×800에서 스크롤 없는 전체 답칸 접근·입력·표 이동 보존 확인.
@@ -39,7 +41,7 @@
 - 최종 arm64 release build exit0 (202.0s), APK 서명 v2 verify PASS.
 - APK: releases/GRIT-1.0.0-arm64.apk
 - SHA256: 270650217DA0FCE659B75A0430AEF1CE2B4A678C8A1F6D3BDBC9DAADB9D9BCC1
-- 허용된 폰 SM-S948N / R5KL20DHWAE에 adb install -r Success, 실행 확인. 업데이트 전후 기존 완료 1세트/정답4개/누적1분 통계 동일. 업데이트 후 진행 중 나눗셈도 확인.
+- 허용된 폰 SM-S948N / <허용폰_SERIAL>에 adb install -r Success, 실행 확인. 업데이트 전후 기존 완료 1세트/정답4개/누적1분 통계 동일. 업데이트 후 진행 중 나눗셈도 확인.
 - 실제 폰 설정에서 기록 초기화 항목 및 백업 메뉴 제거 확인. 후속 확인 중 사용자가 화면을 이동했으므로 추가 탭 동작은 중단했다. 이후 읽기 확인에서 덧셈 1번 표/외곽 메모/사용자가 입력한 세로 메모167/숫자패드/표 이동이 한 화면에 표시됨을 확인했다. 사용자 답안/메모를 도구로 입력하거나 초기화하지 않았다.
 - 실제 폴더블 검증과 최종 곱셈/정렬의 실기기 전수 검증은 미실시이며 호스트 검사와 구분한다. 태블릿 SM-X400 조작 없음.
 - 이전 '빌드·설치 보류' 상태는 이번 명시 승인 및 최종 설치로 해제됐다.
@@ -88,7 +90,7 @@
 - 다음 묶음은 첫 묶음에 대한 사용자 피드백 후 진행. 400개를 자동으로 채우지 않는다. Git 커밋/푸시 없음.
 
 ## 1.2.0 사용자 휴대폰 설치 — 2026-10-28 후속
-- 사용자 연결·설치 요청으로 SM-S948N(R5KL20DHWAE)에만 작업. 기존 versionCode 2001 때문에 최초 code3 APK 설치는 VERSION_DOWNGRADE로 거부됨. 강제 다운그레이드·삭제 없이 pubspec 버전을 1.2.0+2002로 수정하고 release ARM64 재빌드 성공(62.9초). 기능/문항 변경 없음.
+- 사용자 연결·설치 요청으로 SM-S948N(<허용폰_SERIAL>)에만 작업. 기존 versionCode 2001 때문에 최초 code3 APK 설치는 VERSION_DOWNGRADE로 거부됨. 강제 다운그레이드·삭제 없이 pubspec 버전을 1.2.0+2002로 수정하고 release ARM64 재빌드 성공(62.9초). 기능/문항 변경 없음.
 - adb install -r Success. 설치 버전 1.2.0/code2002 확인, MainActivity 실행 Status ok. 데이터 초기화·앱 삭제 없음. 사용자 기록 내용의 실기기 전수 확인과 Fold 시각 검증은 미실시.
 - releases/GRIT-1.2.0-PSAT-batch01-arm64.apk는 이번 재빌드본으로 교체. SHA256: 687D26098493CF9B5438439BCE8534459892874A0DA202E056F51CCB362E1A0D. 위 최초 code3 산출물 해시는 당시 기록이다.
 - 태블릿 및 Shiftbell 조작 없음.
@@ -101,7 +103,7 @@
 - 정적 분석 No issues found. artifacts/psat_readability_20261028/tests.log, analyze.log. 호스트 360/752dp 화면 캡처 확인. 실제 Fold 검증은 별개.
 - 내부 버전 1.2.0+2003. 앱 저장/채점 코드 변경 없음.
 
-- 최종 release ARM64 빌드 성공(118.8초). 사용자 폰 R5KL20DHWAE에 install -r Success, versionCode2003/versionName1.2.0 확인 및 MainActivity 실행 Status ok. 앱 삭제·데이터 초기화 없음. 실기기 세부 시각 확인은 사용자 피드백 대기.
+- 최종 release ARM64 빌드 성공(118.8초). 사용자 폰 <허용폰_SERIAL>에 install -r Success, versionCode2003/versionName1.2.0 확인 및 MainActivity 실행 Status ok. 앱 삭제·데이터 초기화 없음. 실기기 세부 시각 확인은 사용자 피드백 대기.
 - APK: releases/GRIT-1.2.0-PSAT-readability-arm64.apk / SHA256: 939B768FB6901E7D2699D4CCCDBDE4DFED06E28F74E81095544A65E2934DFC05
 
 
@@ -114,7 +116,7 @@
 - 정적 분석 No issues found. tools/check_psat_data01.py: 공식최종정답10/선택지50/유리수 계산/발문·보기·선택지 전사 대조 PASS. 초기 전사 검사에서 발문 속<보기>참조까지 잡은 것을 행 시작 구역으로 구분해 수정함.
 - 증거: artifacts/psat_data10_20261028/{all-tests.log,analyze.log,content_checks.json,screens,review,sources}. 정식600문항 인수인계는 사용자 요청대로 SRTL 조율 승인 후 작성한다.
 
-- 최종 release ARM64 build 성공(75.5초), APK 내부 기존20문항 바이트 보존 및 신규10문항/자료13+원문10이미지 검토본 일치. SM-S948N R5KL20DHWAE install -r Success, versionName1.2.0/versionCode2004 확인, MainActivity 실행 Status ok. 앱 삭제/데이터 초기화/태블릿/Shiftbell 조작 없음.
+- 최종 release ARM64 build 성공(75.5초), APK 내부 기존20문항 바이트 보존 및 신규10문항/자료13+원문10이미지 검토본 일치. SM-S948N <허용폰_SERIAL> install -r Success, versionName1.2.0/versionCode2004 확인, MainActivity 실행 Status ok. 앱 삭제/데이터 초기화/태블릿/Shiftbell 조작 없음.
 - 최종 APK releases/GRIT-1.2.0-PSAT30-arm64.apk (22505856 bytes), SHA256 F7DD8566DD6B69A96836BD9877E30EAD3D986838A4EB3210DFD49BA7BDAAD90C. 현재 폰 세부 시각 및 SRTL 노트8 조율은 사용자 피드백 대기. 600문항 제작·정식 인수인계 미착수.
 
 ## 풀이 안내서 위치 변경 — 2026-10-28 사용자 요청
@@ -123,7 +125,7 @@
 - 기존 안내서 진입/검색/읽기 및 무스크롤 홈/큰 글자 대상6검사 PASS. 전체 회귀 재실행 없음.
 
 ## SRTL Fold8 조율·전역 어절 줄바꿈 — 2026-10-28 최종
-- 대상 localhost:39247 / adb 모델 SM_F976U, 사용자 Fold8 Ultra 지칭. 펼침2256×2504/density480, 접힘1080×2520/density480. 폰 R5KL20DHWAE·태블릿·Shiftbell 조작 없음.
+- 대상 <과거_SRTL_접속주소> / adb 모델 SM_F976U, 사용자 Fold8 Ultra 지칭. 펼침2256×2504/density480, 접힘1080×2520/density480. 폰 <허용폰_SERIAL>·태블릿·Shiftbell 조작 없음.
 - 자료해석 기본 전체 폭 읽기/나란히 전환, 실제 occluding hinge만 회피, 짧은 내용 세로 중앙, 표/주석 비례 자동 축소, 짧은 선택지 측정 기반 가로 묶음. 긴 조건/해설에는 스크롤 허용. 언어/상황은 기존 나란히+크게 읽기 전환. 비타민 안내서 헤더 이동 포함.
 - WordText/WordSelectableText로 비타민·안내서·설정·기록·버튼 등 일반 UI의 어절 줄바꿈을 공통 처리. PSAT PsatText는 동일 psatWordSpans 규칙 사용. 원본 문자열/문항·저장 스키마·생성/채점 변경 없음.
 - 전체53검사 PASS(all-tests-final.log), 이후 추가 가용 높이/무스크롤 대상1검사 PASS(data-fit.log), 고유54검사. 실제 폭·글자배율·intrinsic 컨테이너 어절 검사 포함. 최종 analyze No issues found.
